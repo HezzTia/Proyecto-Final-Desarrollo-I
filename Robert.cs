@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProyectoFinal
 {
-    internal class Prueba
+    internal class Class1
     {
+        static void Main(String[] args)
+        {
+            Console.WriteLine("Hola");
+        }
     }
 }
