@@ -12,6 +12,7 @@ namespace ProyectoFinal
         {
             Console.WriteLine("Ready");
             Console.WriteLine("Confirmo");
+            Console.WriteLine("Confirmo de nuevo");
         }
     }
 }
