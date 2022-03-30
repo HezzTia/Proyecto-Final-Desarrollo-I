@@ -10,7 +10,7 @@ namespace ProyectoFinal
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hola World");
+            Console.WriteLine("tmm");
         }
     }
 }
