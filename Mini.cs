@@ -11,6 +11,7 @@ namespace ProyectoFinal
         static void Main(string[] args)
         {
             Console.WriteLine("Ready");
+            Console.WriteLine("Confirmo");
         }
     }
 }
