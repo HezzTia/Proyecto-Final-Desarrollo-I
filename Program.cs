@@ -11,6 +11,7 @@ namespace ProyectoFinal
         static void Main(string[] args)
         {
             Console.WriteLine("Toy harta");
+            Console.WriteLine("Lo que dice arriba es verdad");
         }
     }
 }
