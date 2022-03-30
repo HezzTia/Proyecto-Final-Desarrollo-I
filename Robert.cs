@@ -8,7 +8,7 @@ namespace ProyectoFinal
 {
     internal class Robert
     {
-        static void Main(string[] args)
+        static void Nobody(string[] args)
         {
             Console.WriteLine("Hola");
         }

@@ -10,9 +10,8 @@ namespace ProyectoFinal
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Toy harta");
-            Console.WriteLine("Lo que dice arriba es verdad");
-            Console.WriteLine("Es cierto");
+            Console.WriteLine("Hola");
+            Console.ReadKey();
         }
     }
 }

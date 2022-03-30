@@ -8,7 +8,7 @@ namespace ProyectoFinal
 {
     internal class Pena
     {
-        static void Main(string[] args)
+        static void VictorP(string[] args)
         {
             Console.WriteLine("Hola");
         }
