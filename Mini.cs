@@ -15,7 +15,7 @@ namespace ProyectoFinal
             switch (vModulo)
             {
                 case 1:
-                    Console.WriteLine("PRIMER MÓDULO: Conceptos básicos");
+                    Console.WriteLine("PRIMER MÓDULO: Conceptos básicos\n");
                     Console.WriteLine("No podemos empezar a programar así del tirón, puede que este no sea el primer rodeo para varios y que los siguientes conceptos que vamos a tratar sean pan con queso para ellos, no obstante, muchos están empezando desde 0 y por lo tanto, es muy importante que se graben lo siguiente en la mente.");
                     Console.WriteLine("El primer concepto que tenemos es el de SOFTWARE. El software es básicamente un conjunto de instrucciones, programas o datos que son utilizados para hacer funcionar las computadoras y ejecutar tareas específicas. Lo contrario del hardware, que describe los aspectos físicos de una computadora.");
                     break;
