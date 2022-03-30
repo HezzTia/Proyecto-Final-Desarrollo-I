@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProyectoFinal
 {
-    internal class Class1
+    internal class Robert
     {
-        static void Main(String[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("Hola");
         }
