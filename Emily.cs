@@ -8,5 +8,11 @@ namespace ProyectoFinal
 {
     internal class Emily
     {
+        static void QSY()
+    {
+
+            Console.WriteLine("klok Emily🙌🏼");
+
+    }
     }
 }
