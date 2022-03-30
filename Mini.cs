@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoFinal
 {
-    internal class Mañón
+    internal class Mini
     {
         static void Main(string[] args)
         {
