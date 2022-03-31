@@ -36,8 +36,43 @@ namespace ProyectoFinal
                     Console.WriteLine("C# es un lenguaje fuertemente tipado. Cada variable y constante tiene un tipo, al igual que cada expresión que se evalúa a un valor. Cada declaración de método especifica un nombre, el tipo y la clase (valor, referencia o salida) de cada parámetro de entrada y del valor de retorno.\n");
                     Console.WriteLine("Los 13 tipos predefinidos simples incluyen:\n ");
                     Console.WriteLine(" Once tipos numéricos:\n  - Ocho tipos enteros de varias longitudes, con y sin signo: sbyte, byte, short, ushort, int, uint, long y ulong.\n  - Dos tipos de punto flotante: float y double.\n - Un tipo de mayor precisión llamado decimal, que a diferencia de float y double, puede representar números con fracciones exactas. Lo que lo hace adecuado para cálculos financieros, monetarios, operaciones aritméticas, etc.");
-                    Console.WriteLine("Un tipo de carácter unicode, llamado char.\n - bool, Un tipo que representa dos valores, verdadero y falso.\n ")
+                    Console.WriteLine("Un tipo de carácter unicode, llamado char.\n - bool, Un tipo que representa dos valores, verdadero y falso.\n "
+                    Console.WriteLine("Los 3 tipos restantes o no simples son:");
+                    Console.WriteLine(" - object, que es el tipo base de todos los demás tipos.\n   - string, el cual representa un arreglo de caracteres Unicode.\n - dynamic, el cual es usado para escribir assemblies en lenguajes dinámicos.\n");
+                    Console.WriteLine("A simple vista puede parecer complicado pero a la hora de ponerlo en práctica te vas a dar cuenta de lo fácil que es realmente utilizarlos (o al menos la mayoría de estos).\n");
+                    Console.WriteLine("Pasando a los operadores, tenemos 4 tipos de operadores: aritméticos, lógicos, de asignación y relacionales.");
+                    Console.WriteLine("Los operadores aritméticos permiten efectuar cálculos, es decir, operaciones matemáticas, en el contenido de las variables.");
+                    Console.WriteLine("Suma     +\n Sustracción     - \n Multiplicación     *\n División      / \n Módulo (resto de la división entera)     % \n ");
+                    Console.WriteLine("Los operadores lógicos permiten combinar las expresiones en estructuras condicionales o de bucle.");
+                    Console.WriteLine("Y      && \n O       || \n Negación       !  \n");
+                    Console.WriteLine("Los operadores de asignación como su mismo nombre lo dice, sirven para asignar valores.")
+                    Console.WriteLine("Asignación    = \n Suma 1++ \n Resta 1-- \n Suma el número que se elija += \n Resta el número que se elija -= \n");
+                    Console.WriteLine("Finalmente, tenemos los operadores relacionales o de comparación, comparan sus operadores.");
+                    Console.WriteLine("Compara si los operadores son iguales     == \n Compara si el operador es menor que otro < \n Compara si el operador es mayor que otro > \n Compara si el operador es menor o igual que otro <= \n Compara si el operador es mayor o igual que otro >= \n");
                     break;
+                case 3:
+                    Console.WriteLine("TERCER MÓDULO: Decisiones\n");
+                    Console.WriteLine("En c# tenemos dos tipos de estructuras en la toma de decisiones: la estructura if y la estructura switch.\n");
+                    Console.WriteLine("Dos conceptos importantes al tratar con decisiones son acumulador y contador: el ACUMULADOR es una variable que se utiliza para sumar valores. Se utiliza normalmente dentro de un ciclo pero cambiamos su valor sumándole una variable, es decir, no siempre se le suma la misma cantidad. Mientras tanto, el CONTADOR es una variable que se utiliza para contar algo. Normalmente usamos un contador dentro de un ciclo y cambiamos su valor sumándole o restándole una constante, es decir, siempre se le suma o resta la misma cantidad. El caso más utilizado es incrementar la variable en uno.\n");
+                    Console.WriteLine("En la estructura if tenemos 3 tipos: If then, if then else y por último, if then else if (if anidado).");
+                    Console.WriteLine("IF THEN, significa que si la condición que colocamos es cierta, el programa hará una cosa, sin ninguna consecuencia si esta condición no se cumple.");
+                    Console.WriteLine("------------Ejemplo------------");
+                    Console.WriteLine("DisplayWeatherReport(15.0);  // Output: Cold. \n DisplayWeatherReport(24.0);  // Output: Perfect!\n");
+                    Console.WriteLine("void DisplayWeatherReport(double tempInCelsius)\n {\n     if (tempInCelsius < 20.0)\n     {\n         Console.WriteLine("+"Cold."+");\n     }\n }\n -------------------------------------------------------------------\n");
+                    Console.WriteLine("IF THEN ELSE, significa que si la condición que colocamos es cierta, el programa hará una cosa y si no es cierta, pues hará otra.\n");
+                    Console.WriteLine("------------Ejemplo------------\n");
+                    Console.WriteLine("DisplayWeatherReport(15.0);  // Output: Cold.\n DisplayWeatherReport(24.0);  // Output: Perfect!\n \n void DisplayWeatherReport(double tempInCelsius)\n { \n  if (tempInCelsius < 20.0) \n    { \n         Console.WriteLine("+"Cold"+."); \n  } \n     else \n     { \n          Console.WriteLine("+"Perfect!"+"); \n      } \n } \n -------------------------------------------------------------------\n");
+                    Console.WriteLine("IF THEN ELSE IF, también conocido como if anidado, es una sentencia if que se encuentra dentro de otra sentencia if. Esto es considerado una mala práctica y si es usado, no se recomienda usar en más de 5 bloques.\n");
+                    Console.WriteLine("------------Ejemplo------------\n");
+                    Console.WriteLine("DisplayCharacter('f');  // Output: A lowercase letter: f\n DisplayCharacter('R');  // Output: An uppercase letter: R\n DisplayCharacter('8');  // Output: A digit: 8\n DisplayCharacter(',');  // Output: Not alphanumeric character: ,\n");
+                    Console.WriteLine("void DisplayCharacter(char ch)\n {\n     if (char.IsUpper(ch))\n     {\n         Console.WriteLine("+"An uppercase letter: {ch}"+ ");\n     } \n     else if (char.IsLower(ch))\n     {\n         Console.WriteLine($"+"A lowercase letter: { ch}"+ ");\n     }\n     else if (char.IsDigit(ch))\n     {\n         Console.WriteLine($"+"A digit: { ch}"+ ");\n     }\n     else\n     {\n         Console.WriteLine($"+"Not alphanumeric character: { ch}"+ ");\n     }\n }\n -------------------------------------------------------------------\n");
+                    Console.WriteLine("Como mejor alternativa al if anidado tenemos nuestra segunda estructura, la estructura switch.\n SWITCH, es una estructura que nos permite evaluar más de un caso y se caracteriza por la selección de una opción entre varias.");
+                    Console.WriteLine("------------Ejemplo------------");
+                    Console.WriteLine("DisplayMeasurement(-4);  // Output: Measured value is -4; too low.\n DisplayMeasurement(5);  // Output: Measured value is 5.\n DisplayMeasurement(30);  // Output: Measured value is 30; too high.\n DisplayMeasurement(double.NaN);  // Output: Failed measurement.\n");
+                    Console.WriteLine("void DisplayMeasurement(double measurement)\n {\n     switch (measurement)\n     {\n         case < 0.0:\n             Console.WriteLine($"+"Measured value is { measurement }; too low."+ ");\n             break;\n         case > 15.0:\n             Console.WriteLine($"+"Measured value is { measurement }; too high."+");\n             break;\n \n         case double.NaN:\n             Console.WriteLine("+"Failed measurement."+");\n             break;\n \n         default:\n             Console.WriteLine($"+"Measured value is { measurement }."+");\n             break;\n     }\n }\n");
+                    break;
+                case 4:
+
             }
             Console.ReadKey();
                 
