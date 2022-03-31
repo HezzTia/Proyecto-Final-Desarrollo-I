@@ -30,6 +30,14 @@ namespace ProyectoFinal
                     Console.WriteLine("El octavo concepto que tenemos es el de PROCESO. Esto es una secuencia de acciones que se llevan a cabo para lograr un fin determinado. En la ingeniería de software, un proceso de software es una serie de actividades relacionadas que conducen a la elaboración de un producto de software.\n");
                     Console.WriteLine("El noveno y último concepto que tenemos es el de DIAGRAMA DE FLUJO. Este es un diagrama que describe un proceso, sistema o algoritmo informático. Se usan ampliamente en numerosos campos para documentar, estudiar, planificar, mejorar y comunicar procesos que suelen ser complejos en diagramas claros y fáciles de comprender. Los diagramas de flujo emplean rectángulos, óvalos, diamantes y otras numerosas figuras para definir el tipo de paso, junto con flechas conectoras que establecen el flujo y la secuencia.\n");
                     break;
+
+                case 2:
+                    Console.WriteLine("SEGUNDO MÓDULO: Tipos de datos, variables y operadores\n");
+                    Console.WriteLine("C# es un lenguaje fuertemente tipado. Cada variable y constante tiene un tipo, al igual que cada expresión que se evalúa a un valor. Cada declaración de método especifica un nombre, el tipo y la clase (valor, referencia o salida) de cada parámetro de entrada y del valor de retorno.\n");
+                    Console.WriteLine("Los 13 tipos predefinidos simples incluyen:\n ");
+                    Console.WriteLine(" Once tipos numéricos:\n  - Ocho tipos enteros de varias longitudes, con y sin signo: sbyte, byte, short, ushort, int, uint, long y ulong.\n  - Dos tipos de punto flotante: float y double.\n - Un tipo de mayor precisión llamado decimal, que a diferencia de float y double, puede representar números con fracciones exactas. Lo que lo hace adecuado para cálculos financieros, monetarios, operaciones aritméticas, etc.");
+                    Console.WriteLine("Un tipo de carácter unicode, llamado char.\n - bool, Un tipo que representa dos valores, verdadero y falso.\n ")
+                    break;
             }
             Console.ReadKey();
                 
