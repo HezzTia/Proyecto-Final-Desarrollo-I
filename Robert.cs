@@ -17,13 +17,13 @@ namespace ProyectoFinal
 
         static void ConnectDB()
         {
-            string vConnectionString = @"Data Source=prueba.db";
+            string vConnectionString = @"Data Source=./SharpMe.db";
             SQLiteConnection vSQLCon = new SQLiteConnection(vConnectionString);
             vSQLCon.Open();
         }
         static void CreateTable()
         {
-            string vConnectionString = @"Data Source=prueba.db";
+            string vConnectionString = @"Data Source=./SharpMe.db";
             SQLiteConnection vSQLCon = new SQLiteConnection(vConnectionString);
             vSQLCon.Open();
 
