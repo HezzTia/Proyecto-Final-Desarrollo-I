@@ -8,7 +8,7 @@ namespace ProyectoFinal
 {
     internal class Emily
     {
-        static void Main(string[] args)
+        static void Cabrera(string[] args)
         {
             Console.WriteLine("Klk");
         }
