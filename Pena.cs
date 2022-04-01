@@ -91,7 +91,7 @@ namespace ProyectoFinal
         }
         static void LogIn()
         {
-            Console.WriteLine("Sharp Me\n");
+            Console.WriteLine("Sharp Me\n" );
             Console.WriteLine("Inicie Sesion\n");
             Console.Write("Usuario");
         }
