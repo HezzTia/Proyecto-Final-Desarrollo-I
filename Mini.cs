@@ -36,7 +36,7 @@ namespace ProyectoFinal
                     Console.WriteLine("C# es un lenguaje fuertemente tipado. Cada variable y constante tiene un tipo, al igual que cada expresión que se evalúa a un valor. Cada declaración de método especifica un nombre, el tipo y la clase (valor, referencia o salida) de cada parámetro de entrada y del valor de retorno.\n");
                     Console.WriteLine("Los 13 tipos predefinidos simples incluyen:\n ");
                     Console.WriteLine(" Once tipos numéricos:\n  - Ocho tipos enteros de varias longitudes, con y sin signo: sbyte, byte, short, ushort, int, uint, long y ulong.\n  - Dos tipos de punto flotante: float y double.\n - Un tipo de mayor precisión llamado decimal, que a diferencia de float y double, puede representar números con fracciones exactas. Lo que lo hace adecuado para cálculos financieros, monetarios, operaciones aritméticas, etc.");
-                    Console.WriteLine("Un tipo de carácter unicode, llamado char.\n - bool, Un tipo que representa dos valores, verdadero y falso.\n "
+                    Console.WriteLine("Un tipo de carácter unicode, llamado char.\n - bool, Un tipo que representa dos valores, verdadero y falso.\n ");
                     Console.WriteLine("Los 3 tipos restantes o no simples son:");
                     Console.WriteLine(" - object, que es el tipo base de todos los demás tipos.\n   - string, el cual representa un arreglo de caracteres Unicode.\n - dynamic, el cual es usado para escribir assemblies en lenguajes dinámicos.\n");
                     Console.WriteLine("A simple vista puede parecer complicado pero a la hora de ponerlo en práctica te vas a dar cuenta de lo fácil que es realmente utilizarlos (o al menos la mayoría de estos).\n");
@@ -45,7 +45,7 @@ namespace ProyectoFinal
                     Console.WriteLine("Suma     +\n Sustracción     - \n Multiplicación     *\n División      / \n Módulo (resto de la división entera)     % \n ");
                     Console.WriteLine("Los operadores lógicos permiten combinar las expresiones en estructuras condicionales o de bucle.");
                     Console.WriteLine("Y      && \n O       || \n Negación       !  \n");
-                    Console.WriteLine("Los operadores de asignación como su mismo nombre lo dice, sirven para asignar valores.")
+                    Console.WriteLine("Los operadores de asignación como su mismo nombre lo dice, sirven para asignar valores.");
                     Console.WriteLine("Asignación    = \n Suma 1++ \n Resta 1-- \n Suma el número que se elija += \n Resta el número que se elija -= \n");
                     Console.WriteLine("Finalmente, tenemos los operadores relacionales o de comparación, comparan sus operadores.");
                     Console.WriteLine("Compara si los operadores son iguales     == \n Compara si el operador es menor que otro < \n Compara si el operador es mayor que otro > \n Compara si el operador es menor o igual que otro <= \n Compara si el operador es mayor o igual que otro >= \n");
@@ -61,7 +61,7 @@ namespace ProyectoFinal
                     Console.WriteLine("void DisplayWeatherReport(double tempInCelsius)\n {\n     if (tempInCelsius < 20.0)\n     {\n         Console.WriteLine("+"Cold."+");\n     }\n }\n -------------------------------------------------------------------\n");
                     Console.WriteLine("IF THEN ELSE, significa que si la condición que colocamos es cierta, el programa hará una cosa y si no es cierta, pues hará otra.\n");
                     Console.WriteLine("------------Ejemplo------------\n");
-                    Console.WriteLine("DisplayWeatherReport(15.0);  // Output: Cold.\n DisplayWeatherReport(24.0);  // Output: Perfect!\n \n void DisplayWeatherReport(double tempInCelsius)\n { \n  if (tempInCelsius < 20.0) \n    { \n         Console.WriteLine("+"Cold"+."); \n  } \n     else \n     { \n          Console.WriteLine("+"Perfect!"+"); \n      } \n } \n -------------------------------------------------------------------\n");
+                    Console.WriteLine("DisplayWeatherReport(15.0);  // Output: Cold.\n DisplayWeatherReport(24.0);  // Output: Perfect!\n \n void DisplayWeatherReport(double tempInCelsius)\n { \n  if (tempInCelsius < 20.0) \n    { \n         Console.WriteLine("+"Cold."+"); \n  } \n     else \n     { \n          Console.WriteLine("+"Perfect!"+"); \n      } \n } \n -------------------------------------------------------------------\n");
                     Console.WriteLine("IF THEN ELSE IF, también conocido como if anidado, es una sentencia if que se encuentra dentro de otra sentencia if. Esto es considerado una mala práctica y si es usado, no se recomienda usar en más de 5 bloques.\n");
                     Console.WriteLine("------------Ejemplo------------\n");
                     Console.WriteLine("DisplayCharacter('f');  // Output: A lowercase letter: f\n DisplayCharacter('R');  // Output: An uppercase letter: R\n DisplayCharacter('8');  // Output: A digit: 8\n DisplayCharacter(',');  // Output: Not alphanumeric character: ,\n");
@@ -77,7 +77,7 @@ namespace ProyectoFinal
                     Console.WriteLine("WHILE, esta sentencia comprueba una condición y ejecuta la sentencia o bloque de sentencias que sigue al while. Comprueba repetidamente la condición y ejecuta esas sentencias hasta que la condición es falsa.\n");
                     Console.WriteLine("------------Ejemplo------------\n int counter = 0;\n while (counter < 10)\n {\n     Console.WriteLine($"+"Hello World! The counter is { counter }"+");\n     counter++;\n }\n -------------------------------------------------------------------\n");
                     Console.WriteLine("DO WHILE, la sentencia anterior y esta son parecidas, no obstante, el bucle do while ejecuta primero el código y luego comprueba la condición.");
-                    Console.WriteLine("------------Ejemplo------------\n ")
+                    Console.WriteLine("------------Ejemplo------------\n ");
                     break;
             }
             Console.ReadKey();
