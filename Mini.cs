@@ -72,7 +72,13 @@ namespace ProyectoFinal
                     Console.WriteLine("void DisplayMeasurement(double measurement)\n {\n     switch (measurement)\n     {\n         case < 0.0:\n             Console.WriteLine($"+"Measured value is { measurement }; too low."+ ");\n             break;\n         case > 15.0:\n             Console.WriteLine($"+"Measured value is { measurement }; too high."+");\n             break;\n \n         case double.NaN:\n             Console.WriteLine("+"Failed measurement."+");\n             break;\n \n         default:\n             Console.WriteLine($"+"Measured value is { measurement }."+");\n             break;\n     }\n }\n");
                     break;
                 case 4:
+                    Console.WriteLine("CUARTO MÓDULO: Bucles\n");
+                    Console.WriteLine("Tenemos tres (técnicamente 4) tipos de bucles en c#: while, do while y for.\n");
+                    Console.WriteLine("WHILE, esta sentencia comprueba una condición y ejecuta la sentencia o bloque de sentencias que sigue al while. Comprueba repetidamente la condición y ejecuta esas sentencias hasta que la condición es falsa.\n");
+                    Console.WriteLine("------------Ejemplo------------\n int counter = 0;\n while (counter < 10)\n {\n     Console.WriteLine($"+"Hello World! The counter is { counter }"+");\n     counter++;\n }\n -------------------------------------------------------------------\n");
+                    Console.WriteLine("DO WHILE, la sentencia anterior y esta son parecidas, no obstante, el bucle do while ejecuta primero el código y luego comprueba la condición.");
 
+                    break;
             }
             Console.ReadKey();
                 
