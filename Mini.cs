@@ -77,7 +77,7 @@ namespace ProyectoFinal
                     Console.WriteLine("WHILE, esta sentencia comprueba una condición y ejecuta la sentencia o bloque de sentencias que sigue al while. Comprueba repetidamente la condición y ejecuta esas sentencias hasta que la condición es falsa.\n");
                     Console.WriteLine("------------Ejemplo------------\n int counter = 0;\n while (counter < 10)\n {\n     Console.WriteLine($"+"Hello World! The counter is { counter }"+");\n     counter++;\n }\n -------------------------------------------------------------------\n");
                     Console.WriteLine("DO WHILE, la sentencia anterior y esta son parecidas, no obstante, el bucle do while ejecuta primero el código y luego comprueba la condición.");
-
+                    Console.WriteLine("------------Ejemplo------------\n ")
                     break;
             }
             Console.ReadKey();
