@@ -8,7 +8,7 @@ namespace ProyectoFinal
 {
     internal class Mini
     {
-        static void Main(string[] args)
+        static void Manon(string[] args)
         {
             Console.WriteLine("Seleccione el módulo que desea trabajar");
             int vMódulo = Int32.Parse(Console.ReadLine());
