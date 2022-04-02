@@ -62,10 +62,10 @@ namespace ProyectoFinal
                     Console.WriteLine("DisplayWeatherReport(15.0);  // Output: Cold. \nDisplayWeatherReport(24.0);  // Output: Perfect!\n");
                     Console.WriteLine("void DisplayWeatherReport(double tempInCelsius)\n{\n     if (tempInCelsius < 20.0)\n     {\n         Console.WriteLine("+"Cold."+");\n     }\n}\n-------------------------------------------------------------------\n");
                     Console.WriteLine("IF THEN ELSE, significa que si la condición que colocamos es cierta, el programa hará una cosa y si no es cierta, pues hará otra.\n");
-                    Console.WriteLine("------------Ejemplo------------\n");
+                    Console.WriteLine("------------Ejemplo------------");
                     Console.WriteLine("DisplayWeatherReport(15.0);  // Output: Cold.\nDisplayWeatherReport(24.0);  // Output: Perfect!\n \nvoid DisplayWeatherReport(double tempInCelsius)\n{\n    if (tempInCelsius < 20.0)\n    {\n        Console.WriteLine("+"Cold."+"); \n    } \n    else\n    {\n        Console.WriteLine("+"Perfect!"+");\n    }\n} \n-------------------------------------------------------------------\n");
                     Console.WriteLine("IF THEN ELSE IF, también conocido como if anidado, es una sentencia if que se encuentra dentro de otra sentencia if. Esto es considerado una mala práctica y si es usado, no se recomienda usar en más de 5 bloques.\n");
-                    Console.WriteLine("------------Ejemplo------------\n");
+                    Console.WriteLine("------------Ejemplo------------");
                     Console.WriteLine("DisplayCharacter('f');  // Output: A lowercase letter: f\nDisplayCharacter('R');  // Output: An uppercase letter: R\nDisplayCharacter('8');  // Output: A digit: 8\nDisplayCharacter(',');  // Output: Not alphanumeric character: ,\n");
                     Console.WriteLine("void DisplayCharacter(char ch)\n{\n  if (char.IsUpper(ch))\n  {\n      Console.WriteLine("+"An uppercase letter: {ch}"+ ");\n  } \n  else if (char.IsLower(ch))\n  {\n      Console.WriteLine($"+"A lowercase letter: { ch}"+ ");\n  }\n  else if (char.IsDigit(ch))\n  {\n      Console.WriteLine($"+"A digit: { ch}"+ ");\n  }\n  else\n  {\n      Console.WriteLine($"+"Not alphanumeric character: { ch}"+ ");\n  }\n}\n-------------------------------------------------------------------\n");
                     Console.WriteLine("Como mejor alternativa al if anidado tenemos nuestra segunda estructura, la estructura switch.\n SWITCH, es una estructura que nos permite evaluar más de un caso y se caracteriza por la selección de una opción entre varias.");
@@ -77,9 +77,29 @@ namespace ProyectoFinal
                     Console.WriteLine("CUARTO MÓDULO: Bucles\n");
                     Console.WriteLine("Tenemos tres (técnicamente 4) tipos de bucles en c#: while, do while y for.\n");
                     Console.WriteLine("WHILE, esta sentencia comprueba una condición y ejecuta la sentencia o bloque de sentencias que sigue al while. Comprueba repetidamente la condición y ejecuta esas sentencias hasta que la condición es falsa.\n");
-                    Console.WriteLine("------------Ejemplo------------\nint counter = 0;\nwhile (counter < 10)\n{\n    Console.WriteLine($"+"Hello World! The counter is { counter }"+");\n    counter++;\n}\n-------------------------------------------------------------------\n");
+                    Console.WriteLine("------------Ejemplo------------\nint counter = 0;\nwhile (counter < 10)\n{\n    Console.WriteLine($"+"Hello World! The counter is { counter }"+");\n    counter++;\n}\n-------------------------------------------------------------------");
                     Console.WriteLine("DO WHILE, la sentencia anterior y esta son parecidas, no obstante, el bucle do while ejecuta primero el código y luego comprueba la condición.");
-                    Console.WriteLine("------------Ejemplo------------\n ");
+                    Console.WriteLine("------------Ejemplo------------");
+                    Console.WriteLine("int counter = 0\ndo\n{\n    Console.WriteLine($" + "Hello World! The counter is { counter }" + ");\n    counter++;\n} while (counter < 10);\n-------------------------------------------------------------------");
+                    Console.WriteLine("Finalmente, FOR, esta sentencia se usa en aquellas situaciones en las cuales conocemos la cantidad de veces que queremos que se ejecute el bloque de instrucciones. Además del for, también tenemos el FOREACH, normalmente se utiliza cuando se trabaja con arreglos/colecciones para iterar a través de los elementos de los arreglos o colecciones. El bucle foreach itera a través de cada elemento, de ahí que se llame bucle foreach.");
+                    Console.WriteLine("------------Ejemplo------------");
+                    Console.WriteLine("using System;\n\nnamespace Loop\n{\n    class ForEachLoop\n    {\n        public static void Main(string[] args)\n        {\n            char[] myArray = {'H','e','l','l','o'};\n\n            foreach(char ch in myArray)\n            {\n                Console.WriteLine(ch);\n            }\n        }\n    }\n}\n-------------------------------------------------------------------");
+                    break;
+                case 5:
+                    Console.WriteLine("QUINTO MÓDULO: Arreglos y Métodos\n");
+                    Console.WriteLine("Los ARREGLOS, también se les conoce como Matrices o Arrays, estos almacenan una colección de datos del mismo tipo (int, float, double, String, etc.), con ello se evita declarar una infinidad de variables, del mismo tipo.\n");
+                    Console.WriteLine("Por regla, toda matriz comienza en la posición 0 y llega hasta n, accedemos a sus valores por medio del índice que se coloca en la posición del valor referido. Todas las matrices consisten en ubicaciones de memoria contiguas.\n");
+                    Console.WriteLine("Arreglos estándar:");
+                    Console.WriteLine("------------Ejemplo------------");
+                    Console.WriteLine("int[] valores = new int[10] {0,1,2,3,4,5,6,7,8,9};\nstring[] países = new string[5] {"+"Argentina"+", "+ "Bolivia"+", " +"Perú"+", "+ "Chile"+", "+ "Colombia"+"}; //Inicialización omitiendo el tamaño de la matriz\n\nint[] valores = new int[] {0,1,2,3,4,5,6,7,8,9};\nstring[] países = new string[] {"+"Argentina"+", "+ "Bolivia"+", "+ "Perú"+","+ "Chile"+", "+ "Colombia"+"}\n//También podemos omitir el operador new\n\nint[] valores =  {0,1,2,3,4,5,6,7,8,9};\nstring[] países = {"+"Argentina"+", "+ "Bolivia"+", "+ "Perú"+", "+ "Chile"+", "+ "Colombia"+"};\n-------------------------------------------------------------------\nArreglos multidimensionales:");
+                    Console.WriteLine("------------Ejemplo------------");
+                    Console.WriteLine("int[,] numeros = new int[3, 4] { {1, 2,3,4}, {9, 8,7,6}, {7, 6,2,5} };\nstring[,] regiones = new string[2, 3] { {" + "Argentina"+", "+ "Brasil"+", "+ "Perú" + "}" + "," + "{" + "USA"+", "+ "; México"+", "+ "Costa Rica" + "} }; //También podemos omitir el tamaño de la matriz\n\nint[,] numeros = new int[,] { {1, 2,3,4}, {9, 8,7,6}, {7, 6,2,5} };\nstring[,] regiones = new string[,] { {" + "Argentina"+", "+ "Brasil"+", "+ "Perú" + "}, {+" + "USA"+", "+ "; México"+", "+ "Costa Rica" + "} }; //Y tambien podemos olvidarnos del operador\n\nint[,] numeros =  { {1, 2,3,4}, {9, 8,7,6}, {7, 6,2,5} };\nstring[,] regiones = { {" + "Argentina"+", "+ "Brasil"+", "+ "Peru" + "}, {" + "USA"+", "+ "; Mexico"+", "+ "Costa Rica" + "} };\n-------------------------------------------------------------------");
+                    Console.WriteLine("Los MÉTODOS, un método en C# es una secuencia de enunciados dentro de una unidad lógica en nuestro programa. Son una de las partes esenciales en cualquier aplicación, y proporcionan una forma poderosa de ejecutar operaciones de forma ordenada.");
+                    Console.WriteLine("------------Ejemplo------------");
+                    Console.WriteLine("void Imprimir(string nombre)\n{\n   Console.WriteLine(" + "Hola" + " + nombre);\n}\n-------------------------------------------------------------------");
+                    Console.WriteLine("Para invocar un método simplemente utilizamos: NombredelMetodo();");
+                    Console.WriteLine("------------Ejemplo------------");
+                    Console.WriteLine("int Sumar(int numero1, int numero2)\n{\n     return numero1 + numero2;\n}\n-------------------------------------------------------------------");
                     break;
             }
             Console.ReadKey();
