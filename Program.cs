@@ -8,7 +8,7 @@ namespace ProyectoFinal
 {
     internal class Program
     {
-        static void asd(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("Hola");
             Console.ReadKey();
