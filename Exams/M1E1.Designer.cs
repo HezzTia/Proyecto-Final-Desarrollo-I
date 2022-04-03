@@ -64,7 +64,7 @@
             this.M1E1T1.Name = "M1E1T1";
             this.M1E1T1.Size = new System.Drawing.Size(173, 21);
             this.M1E1T1.TabIndex = 0;
-            this.M1E1T1.Text = "Examen Modulo #1";
+            this.M1E1T1.Text = "Examen Módulo #1";
             this.M1E1T1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.M1E1T1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -75,7 +75,7 @@
             this.M1E1T2.Name = "M1E1T2";
             this.M1E1T2.Size = new System.Drawing.Size(165, 21);
             this.M1E1T2.TabIndex = 1;
-            this.M1E1T2.Text = "Conceptos Basicos";
+            this.M1E1T2.Text = "Conceptos Básicos";
             // 
             // label4
             // 
@@ -221,7 +221,7 @@
             // 
             this.M1E1P2.AutoSize = true;
             this.M1E1P2.Font = new System.Drawing.Font("Britannic Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.M1E1P2.Location = new System.Drawing.Point(571, 290);
+            this.M1E1P2.Location = new System.Drawing.Point(592, 290);
             this.M1E1P2.Name = "M1E1P2";
             this.M1E1P2.Size = new System.Drawing.Size(55, 15);
             this.M1E1P2.TabIndex = 15;
@@ -361,7 +361,7 @@
             this.Controls.Add(this.M1E1T2);
             this.Controls.Add(this.M1E1T1);
             this.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "M1E1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

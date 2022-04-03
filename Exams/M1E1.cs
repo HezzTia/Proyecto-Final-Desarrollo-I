@@ -81,5 +81,10 @@ namespace ProyectoFinal
             M1e2 = null;
             Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
