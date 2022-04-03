@@ -8,7 +8,7 @@ namespace ProyectoFinal
 {
     internal class Program
     {
-        static void Klk(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("Hola");
             Console.ReadKey();
