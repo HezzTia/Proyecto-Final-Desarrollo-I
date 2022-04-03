@@ -244,10 +244,10 @@
             this.M1E1Q3A3.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.M1E1Q3A3.Location = new System.Drawing.Point(69, 513);
             this.M1E1Q3A3.Name = "M1E1Q3A3";
-            this.M1E1Q3A3.Size = new System.Drawing.Size(561, 22);
+            this.M1E1Q3A3.Size = new System.Drawing.Size(553, 22);
             this.M1E1Q3A3.TabIndex = 21;
-            this.M1E1Q3A3.Text = "El Lenguaje de alto nivel es más díficil de comprender que el lenguajde de bajo n" +
-    "ivel.";
+            this.M1E1Q3A3.Text = "El Lenguaje de alto nivel es más díficil de comprender que el lenguaje de bajo ni" +
+    "vel.";
             this.M1E1Q3A3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.M1E1Q3A3.UseVisualStyleBackColor = true;
             // 
