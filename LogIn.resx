@@ -117,4 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAMYAAAAzCAYAAADMxHf3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAP4SURBVHhe7d0xaBRBFAbgLS0tLS0tLS0trVRkZzeNaCPY
+        SXb2EEEwhYKgIFikEEQEQbybd6kCVkKqFCksLAIWASEiGGPuol7EFPG92TlzOcZ4dzmT253/wYeoe7t7
+        8N7NzO7sbDTu0GnjrFY0I2qJaeiU3oo8oR2Ag+rmk45pvptneUznXPpNTty58uxYlpiLtggUtfnkN/Kk
+        yV9C9H6p7r8BHIQvpwznHHVssST1qRsX5o679Dz8kIPX0uZjPqktnVALyQ9Hj3NQNfnH2fzkP1/kqn7C
+        pevhRJ5SniuzoZXZ8p8gwNHi3ssvztF2Fpv70qtxqft/QsYPNWXWckXffScDMGm4QPjHm9Zr6avLLo3H
+        G3yAaT5Az/gBoDw4f7/WEpp16Tye4P7aSxQFlF2maJN7OwsHHpzLDopLrabjOxBA2WQxjz0SWrmZzp10
+        aT5cyIBFJ7Tk2zlA+dHqSC1H0X1CSwFVVdwsdOk+WOjE3NLKtP07BKgK4h9+eurSfv+oxXSeN1737wig
+        aqiVq8Y1l/7+kHEFigKCI72j/e6SF3e0cfMOwpIp2ubhwxNXBntDKoYH2198HwSoPMW5r+qnXTnshlSM
+        VI73QwCVJxMQ6Y0rhyLkei66UADUzi6ZU64spLWoTxXTdX0bA4SCtrjndNuVBRdGTPO2KfFuDBAQRcu2
+        KNzUj03vRgCB4Vr4YS/dyvOyuX000L8hQEikMLRqXJfnLGZ8GwCEiXZk/QIujOZzjC8AdmllFiO5dovC
+        AOiSWqAVKYxl/wYAYeLhRTtCawHQj3a4MMwqigOgF3V48G0W/f8JECadmI+RXJpCiwHQ5R55xX0MgF7u
+        PkauzFX+yzf/RgBhsQ8txY27mHIOsEfP1PNiUTWMMwBkbWZbFBIyacrOKvRsCBCKLDbbWplHriyiSJYr
+        xDgDgDZkRX9XFkVgzhSETXKfVlw57IaskMDdqZb/QwDVJrkvr8xz5bA3sFIIhIlbi/4VQnrDri2FNWsh
+        MLan5FtTqjd0XL/HFYQuFQRiiIWduVl5reXlft4dAVQFSWuxNPDLK+3izmnznX9nAFVBH+yKIMOEfICr
+        6ZN/hwBlR2vTCZ1x6T5cuEu4n6XJ8e8coIxoTd4D49J8tHB3xd8XL/XzHQSgPKQXNHJL0R92zKFoQSdN
+        TBuBkjIdO24edkwxSGSKHnLrwcWBrhWUhb3y1JKXrQ589WmUsF2rYl4VlvWEiSYFYR+p+NfNu3GGzELk
+        AllGgcBkKVoIWdDgr3OfDiOkQHRMs/KAB59Uu5hrZWcq9p0wwLgVecaFUBSDorYsOXukBeELeSRQnpeV
+        5ku4YvnzBQDGxRZBN88S82C83aUo+g1SQOjQ3QQnEQAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>
