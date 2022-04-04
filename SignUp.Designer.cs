@@ -141,8 +141,9 @@
             // 
             // FechaDeNacimiento
             // 
+            this.FechaDeNacimiento.CustomFormat = "dd/mm/yyyy";
             this.FechaDeNacimiento.Font = new System.Drawing.Font("Britannic Bold", 9.75F);
-            this.FechaDeNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.FechaDeNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.FechaDeNacimiento.Location = new System.Drawing.Point(506, 236);
             this.FechaDeNacimiento.Name = "FechaDeNacimiento";
             this.FechaDeNacimiento.Size = new System.Drawing.Size(189, 29);
