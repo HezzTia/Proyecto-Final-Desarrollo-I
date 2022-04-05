@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class Modulo2Pag1 : Form
+    public partial class Modulo3Pag1 : Form
     {
-        public Modulo2Pag1()
+        public Modulo3Pag1()
         {
             InitializeComponent();
         }
@@ -22,14 +22,9 @@ namespace ProyectoFinal
 
         }
 
-        private void Modulo2Pag1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            new Modulo2Pag2().Show();
+            new Modulo3Pag2().Show();
             this.Hide();
         }
     }

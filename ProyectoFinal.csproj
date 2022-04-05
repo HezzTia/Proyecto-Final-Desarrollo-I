@@ -296,6 +296,54 @@
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
     <Compile Include="Mini.cs" />
+    <Compile Include="Modulo4Pag1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo4Pag1.Designer.cs">
+      <DependentUpon>Modulo4Pag1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo4Pag2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo4Pag2.Designer.cs">
+      <DependentUpon>Modulo4Pag2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Modulo3Pag3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Modulo3Pag3.Designer.cs">
+      <DependentUpon>Modulo3Pag3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Modulo3Pag4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Modulo3Pag4.Designer.cs">
+      <DependentUpon>Modulo3Pag4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Modulo2Pag3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Modulo2Pag3.Designer.cs">
+      <DependentUpon>Modulo2Pag3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Modulo3Pag1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Modulo3Pag1.Designer.cs">
+      <DependentUpon>Modulo3Pag1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Modulo3Pag2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Modulo3Pag2.Designer.cs">
+      <DependentUpon>Modulo3Pag2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Modulo2Pag2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Modulo2Pag2.Designer.cs">
+      <DependentUpon>Modulo2Pag2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\Modulo1Pag3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -374,6 +422,27 @@
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modulo4Pag1.resx">
+      <DependentUpon>Modulo4Pag1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo4Pag2.resx">
+      <DependentUpon>Modulo4Pag2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Modulo3Pag3.resx">
+      <DependentUpon>Modulo3Pag3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Modulo3Pag4.resx">
+      <DependentUpon>Modulo3Pag4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Modulo2Pag3.resx">
+      <DependentUpon>Modulo2Pag3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Modulo3Pag1.resx">
+      <DependentUpon>Modulo3Pag1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Modulo3Pag2.resx">
+      <DependentUpon>Modulo3Pag2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Modulo1Pag3.resx">
       <DependentUpon>Modulo1Pag3.cs</DependentUpon>
     </EmbeddedResource>
@@ -385,6 +454,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Modulo1Pag1.resx">
       <DependentUpon>Modulo1Pag1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Modulo2Pag2.resx">
+      <DependentUpon>Modulo2Pag2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
