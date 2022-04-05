@@ -13,7 +13,7 @@ namespace ProyectoFinal
     public partial class LogIn : Form
     {
 
-        static void Main()
+        static void Mai()
         {
             Application.Run(new LogIn());
         }
@@ -27,5 +27,10 @@ namespace ProyectoFinal
 
         }
 
+        private void CrearCuenta_Click(object sender, EventArgs e)
+        {
+            new SignUp().Show();
+            this.Hide();
+        }
     }
 }

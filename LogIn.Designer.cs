@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.UsuarioLITxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -81,6 +81,7 @@
             this.ClaveLITxt.Location = new System.Drawing.Point(311, 280);
             this.ClaveLITxt.Multiline = true;
             this.ClaveLITxt.Name = "ClaveLITxt";
+            this.ClaveLITxt.PasswordChar = '*';
             this.ClaveLITxt.Size = new System.Drawing.Size(350, 43);
             this.ClaveLITxt.TabIndex = 3;
             this.ClaveLITxt.UseSystemPasswordChar = true;
@@ -136,6 +137,7 @@
             // CrearCuentabtn
             // 
             this.CrearCuentabtn.AutoSize = true;
+            this.CrearCuentabtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CrearCuentabtn.Font = new System.Drawing.Font("Britannic Bold", 9.75F);
             this.CrearCuentabtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.CrearCuentabtn.Location = new System.Drawing.Point(405, 508);
@@ -143,6 +145,7 @@
             this.CrearCuentabtn.Size = new System.Drawing.Size(165, 22);
             this.CrearCuentabtn.TabIndex = 9;
             this.CrearCuentabtn.Text = "Crear una cuenta";
+            this.CrearCuentabtn.Click += new System.EventHandler(this.CrearCuenta_Click);
             // 
             // bunifuButton1
             // 
@@ -163,11 +166,11 @@
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges1;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges4;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.Empty;
