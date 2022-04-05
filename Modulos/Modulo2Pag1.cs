@@ -16,5 +16,15 @@ namespace ProyectoFinal
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Modulo2Pag1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
