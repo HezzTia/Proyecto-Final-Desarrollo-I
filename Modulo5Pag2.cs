@@ -10,27 +10,28 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class Modulo3Pag1 : Form
+    public partial class Modulo5Pag2 : Form
     {
-        public Modulo3Pag1()
+        public Modulo5Pag2()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Modulo5Pag2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Modulo5Pag1().Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Modulo3Pag2().Show();
+            new Modulo5Pag3().Show();
             this.Hide();
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

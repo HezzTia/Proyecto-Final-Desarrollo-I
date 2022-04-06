@@ -296,16 +296,34 @@
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
     <Compile Include="Mini.cs" />
-    <Compile Include="Modulo4Pag1.cs">
+    <Compile Include="Modulo5Pag1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modulo4Pag1.Designer.cs">
+    <Compile Include="Modulo5Pag1.Designer.cs">
+      <DependentUpon>Modulo5Pag1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo5Pag2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo5Pag2.Designer.cs">
+      <DependentUpon>Modulo5Pag2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo5Pag3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo5Pag3.Designer.cs">
+      <DependentUpon>Modulo5Pag3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Modulo4Pag1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Modulo4Pag1.Designer.cs">
       <DependentUpon>Modulo4Pag1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulo4Pag2.cs">
+    <Compile Include="Modulos\Modulo4Pag2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modulo4Pag2.Designer.cs">
+    <Compile Include="Modulos\Modulo4Pag2.Designer.cs">
       <DependentUpon>Modulo4Pag2.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\Modulo3Pag3.cs">
@@ -422,10 +440,19 @@
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulo4Pag1.resx">
+    <EmbeddedResource Include="Modulo5Pag1.resx">
+      <DependentUpon>Modulo5Pag1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo5Pag2.resx">
+      <DependentUpon>Modulo5Pag2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo5Pag3.resx">
+      <DependentUpon>Modulo5Pag3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Modulo4Pag1.resx">
       <DependentUpon>Modulo4Pag1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulo4Pag2.resx">
+    <EmbeddedResource Include="Modulos\Modulo4Pag2.resx">
       <DependentUpon>Modulo4Pag2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Modulo3Pag3.resx">

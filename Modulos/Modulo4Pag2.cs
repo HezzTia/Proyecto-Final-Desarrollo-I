@@ -16,5 +16,11 @@ namespace ProyectoFinal
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Modulo4Pag1().Show();
+            this.Hide();
+        }
     }
 }
