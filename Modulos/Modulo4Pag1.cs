@@ -19,7 +19,7 @@ namespace ProyectoFinal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Modulo4Pag1().Show();
+            new Modulo4Pag2().Show();
             this.Hide();
         }
     }

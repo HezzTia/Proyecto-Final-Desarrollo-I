@@ -22,5 +22,10 @@ namespace ProyectoFinal
             new Modulo5Pag2().Show();
             this.Hide();
         }
+
+        private void Modulo5Pag1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
