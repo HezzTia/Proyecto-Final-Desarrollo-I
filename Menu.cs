@@ -12,7 +12,7 @@ namespace ProyectoFinal
 {
     public partial class Menu : Form
     {
-        static void Menu()
+        static void MenuMain()
         {
             Application.Run(new Menu());
         }
