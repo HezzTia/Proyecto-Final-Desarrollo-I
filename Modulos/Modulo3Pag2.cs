@@ -24,13 +24,13 @@ namespace ProyectoFinal
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new Modulo2Pag1().Show();
+            new Modulo3Pag1().Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Modulo2Pag3().Show();
+            new Modulo3Pag3().Show();
             this.Hide();
         }
     }

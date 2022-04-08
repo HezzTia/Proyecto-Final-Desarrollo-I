@@ -117,10 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>Finalmente, FOR, esta sentencia se usa en aquellas situaciones en las cuales conocemos la cantidad de veces que queremos que se ejecute el bloque de instrucciones. Además del for, también tenemos el FOREACH, normalmente se utiliza cuando se trabaja con arreglos/colecciones para iterar a través de los elementos de los arreglos o colecciones. El bucle foreach itera a través de cada elemento, de ahí que se llame bucle foreach.
-</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2248,5 +2244,8 @@ namespace Loop
     }
 }
 -------------------------------------------------------------------</value>
+  </data>
+  <data name="textBox3.Text" xml:space="preserve">
+    <value>Finalmente, FOR, esta sentencia se usa en aquellas situaciones en las cuales conocemos la cantidad de veces que queremos que se ejecute el bloque de instrucciones. Además del for, también tenemos el FOREACH, normalmente se utiliza cuando se trabaja con arreglos/colecciones para iterar a través de los elementos de los arreglos o colecciones. El bucle foreach itera a través de cada elemento, de ahí que se llame bucle foreach.</value>
   </data>
 </root>

@@ -117,24 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>QUINTO MÓDULO: Arreglos y Métodos
-
-Los ARREGLOS, también se les conoce como Matrices o Arrays, estos almacenan una colección de datos del mismo tipo (int, float, double, String, etc.), con ello se evita declarar una infinidad de variables, del mismo tipo.
-Por regla, toda matriz comienza en la posición 0 y llega hasta n, accedemos a sus valores por medio del índice que se coloca en la posición del valor referido. Todas las matrices consisten en ubicaciones de memoria contiguas.
-Arreglos estándar:
-
-------------Ejemplo------------
-int[] valores = new int[10] {0,1,2,3,4,5,6,7,8,9};
-string[] países = new string[5] {"Argentina", "Bolivia", "Perú","Chile","Colombia"}; //Inicialización omitiendo el tamaño de la matriz
-
-int[] valores = new int[] {0,1,2,3,4,5,6,7,8,9};
-string[] países = new string[] {"Argentina", "Bolivia", "Perú","Chile","Colombia"}; //También podemos omitir el operador new
-
-int[] valores =  {0,1,2,3,4,5,6,7,8,9};
-string[] países = {"Argentina", "Bolivia", "Perú","Chile","Colombia"};
--------------------------------------------------------------------</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2241,6 +2223,25 @@ string[] países = {"Argentina", "Bolivia", "Perú","Chile","Colombia"};
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgSw0gR0/RWttR/QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>QUINTO MÓDULO: Arreglos y Métodos
+
+Los ARREGLOS, también se les conoce como Matrices o Arrays, estos almacenan una colección de datos del mismo tipo (int, float, double, String, etc.), con ello se evita declarar una infinidad de variables, del mismo tipo.
+Por regla, toda matriz comienza en la posición 0 y llega hasta n, accedemos a sus valores por medio del índice que se coloca en la posición del valor referido. Todas las matrices consisten en ubicaciones de memoria contiguas.
+Arreglos estándar:
+
+--------------------------Ejemplo---------------------------
+int[] valores = new int[10] {0,1,2,3,4,5,6,7,8,9};
+string[] países = new string[5] {"Argentina", "Bolivia", "Perú","Chile","Colombia"}; //Inicialización omitiendo el tamaño de la matriz
+
+int[] valores = new int[] {0,1,2,3,4,5,6,7,8,9};
+string[] países = new string[] {"Argentina", "Bolivia", "Perú","Chile","Colombia"}; //También podemos omitir el operador new
+
+int[] valores =  {0,1,2,3,4,5,6,7,8,9};
+string[] países = {"Argentina", "Bolivia", "Perú","Chile","Colombia"};
+-------------------------------------------------------------------
 </value>
   </data>
 </root>

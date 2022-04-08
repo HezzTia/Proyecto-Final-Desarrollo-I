@@ -117,25 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>A simple vista puede parecer complicado pero a la hora de ponerlo en práctica te vas a dar cuenta de lo fácil que es realmente utilizarlos (o al menos la mayoría de estos).
-
-Pasando a los operadores, tenemos 4 tipos de operadores: aritméticos, lógicos, de asignación y relacionales.
-
-Los operadores aritméticos permiten efectuar cálculos, es decir, operaciones matemáticas, en el contenido de las variables.
-
-Suma     +
-Sustracción     -
-Multiplicación     *
-División      /
-Módulo (resto de la división entera)     %
-
-Los operadores lógicos permiten combinar las expresiones en estructuras condicionales o de bucle.
-
-Y      &amp;&amp; 
-O       ||
-Negación       !</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2242,6 +2223,26 @@ Negación       !</value>
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgSw0gR0/RWttR/QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>A simple vista puede parecer complicado pero a la hora de ponerlo en práctica te vas a dar cuenta de lo fácil que es realmente utilizarlos (o al menos la mayoría de estos).
+
+Pasando a los operadores, tenemos 4 tipos de operadores: aritméticos, lógicos, de asignación y relacionales.
+
+Los operadores aritméticos permiten efectuar cálculos, es decir, operaciones matemáticas, en el contenido de las variables.
+
+Suma     +
+Sustracción     -
+Multiplicación     *
+División      /
+Módulo (resto de la división entera)     %
+
+Los operadores lógicos permiten combinar las expresiones en estructuras condicionales o de bucle.
+
+Y      &amp;&amp; 
+O       ||
+Negación       !
 </value>
   </data>
 </root>

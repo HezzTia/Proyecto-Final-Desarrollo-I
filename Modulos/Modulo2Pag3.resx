@@ -117,23 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>Los operadores de asignación como su mismo nombre lo dice, sirven para asignar valores.
-
-Asignación    =
-Suma 1     ++
-Resta 1     --
-Suma el número que se elija     +=
-Resta el número que se elija     -=
-
-Finalmente, tenemos los operadores relacionales o de comparación, comparan sus operadores.
-
-Compara si los operadores son iguales     == 
-Compara si el operador es menor que otro    &lt; 
-Compara si el operador es mayor que otro     &gt;
-Compara si el operador es menor o igual que otro    &lt;= 
-Compara si el operador es mayor o igual que otro     &gt;=</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2240,6 +2223,24 @@ Compara si el operador es mayor o igual que otro     &gt;=</value>
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgSw0gR0/RWttR/QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>Los operadores de asignación como su mismo nombre lo dice, sirven para asignar valores.
+
+Asignación    =
+Suma 1     ++
+Resta 1     --
+Suma el número que se elija     +=
+Resta el número que se elija     -=
+
+Finalmente, tenemos los operadores relacionales o de comparación, comparan sus operadores.
+
+Compara si los operadores son iguales     == 
+Compara si el operador es menor que otro    &lt; 
+Compara si el operador es mayor que otro     &gt;
+Compara si el operador es menor o igual que otro    &lt;= 
+Compara si el operador es mayor o igual que otro     &gt;=
 </value>
   </data>
 </root>

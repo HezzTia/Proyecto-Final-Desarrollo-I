@@ -117,17 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>TERCER MÓDULO: Decisiones
-
-En c# tenemos dos tipos de estructuras en la toma de decisiones: la estructura if y la estructura switch. 
-
-Dos conceptos importantes al tratar con decisiones son acumulador y contador: el ACUMULADOR es una variable que se utiliza para sumar valores. Se utiliza normalmente dentro de un ciclo pero cambiamos su valor sumándole una variable, es decir, no siempre se le suma la misma cantidad. Mientras tanto, el CONTADOR es una variable que se utiliza para contar algo. Normalmente usamos un contador dentro de un ciclo y cambiamos su valor sumándole o restándole una constante, es decir, siempre se le suma o resta la misma cantidad. El caso más utilizado es incrementar la variable en uno.
-
-En la estructura if tenemos 3 tipos: If then, if then else y por último, if then else if (if anidado).
-
-IF THEN, significa que si la condición que colocamos es cierta, el programa hará una cosa, sin ninguna consecuencia si esta condición no se cumple.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2234,6 +2223,18 @@ IF THEN, significa que si la condición que colocamos es cierta, el programa har
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgSw0gR0/RWttR/QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>TERCER MÓDULO: Decisiones
+
+En c# tenemos dos tipos de estructuras en la toma de decisiones: la estructura if y la estructura switch. 
+
+Dos conceptos importantes al tratar con decisiones son acumulador y contador: el ACUMULADOR es una variable que se utiliza para sumar valores. Se utiliza normalmente dentro de un ciclo pero cambiamos su valor sumándole una variable, es decir, no siempre se le suma la misma cantidad. Mientras tanto, el CONTADOR es una variable que se utiliza para contar algo. Normalmente usamos un contador dentro de un ciclo y cambiamos su valor sumándole o restándole una constante, es decir, siempre se le suma o resta la misma cantidad. El caso más utilizado es incrementar la variable en uno.
+
+En la estructura if tenemos 3 tipos: If then, if then else y por último, if then else if (if anidado).
+
+IF THEN, significa que si la condición que colocamos es cierta, el programa hará una cosa, sin ninguna consecuencia si esta condición no se cumple.
 </value>
   </data>
 </root>

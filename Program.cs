@@ -8,7 +8,7 @@ namespace ProyectoFinal
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Man(string[] args)
         {
             Console.WriteLine("Hola");
 

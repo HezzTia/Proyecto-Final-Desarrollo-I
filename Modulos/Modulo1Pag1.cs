@@ -12,7 +12,7 @@ namespace ProyectoFinal
 {
     public partial class Modulo1Pag1 : Form
     {
-        static void Modulo1()
+        static void Main()
         {
             Application.Run(new Modulo1Pag1());
         }
