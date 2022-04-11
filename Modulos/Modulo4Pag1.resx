@@ -117,31 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>CUARTO MÓDULO: Bucles
-
-Tenemos tres (técnicamente 4) tipos de bucles en c#: while, do while y for.
-
-WHILE, esta sentencia comprueba una condición y ejecuta la sentencia o bloque de sentencias que sigue al while. Comprueba repetidamente la condición y ejecuta esas sentencias hasta que la condición es falsa.
---------------------------Ejemplo--------------------------
-int counter = 0;
-while (counter &lt; 10)
-{
-    Console.WriteLine($"Hello World! The counter is {counter}");
-    counter++;
-}
--------------------------------------------------------------------
-DO WHILE, la sentencia anterior y esta son parecidas, no obstante, el bucle do while ejecuta primero el código y luego comprueba la condición.
---------------------------Ejemplo--------------------------
-int counter = 0;
-do
-{
-    Console.WriteLine($"Hello World! The counter is {counter}");
-    counter++;
-} while (counter &lt; 10);
--------------------------------------------------------------------
-</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2248,6 +2223,31 @@ do
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgSw0gR0/RWttR/QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>CUARTO MÓDULO: Bucles
+
+Tenemos tres (técnicamente 4) tipos de bucles en c#: while, do while y for.
+
+WHILE, esta sentencia comprueba una condición y ejecuta la sentencia o bloque de sentencias que sigue al while. Comprueba repetidamente la condición y ejecuta esas sentencias hasta que la condición es falsa.
+---------------------------Ejemplo---------------------------
+int counter = 0;
+while (counter &lt; 10)
+{
+    Console.WriteLine($"Hello World! The counter is {counter}");
+    counter++;
+}
+-------------------------------------------------------------------
+DO WHILE, la sentencia anterior y esta son parecidas, no obstante, el bucle do while ejecuta primero el código y luego comprueba la condición.
+---------------------------Ejemplo---------------------------
+int counter = 0;
+do
+{
+    Console.WriteLine($"Hello World! The counter is {counter}");
+    counter++;
+} while (counter &lt; 10);
+-------------------------------------------------------------------
 </value>
   </data>
 </root>

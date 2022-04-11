@@ -117,26 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>Arreglos multidimensionales:
-------------Ejemplo------------
-int[,] numeros = new int[3, 4] { {1, 2,3,4}, {9, 8,7,6}, {7, 6,2,5} };
-string[,] regiones = new string[2, 3] { {"Argentina","Brasil","Perú"}, {"USA",";México","Costa Rica"} }; //También podemos omitir el tamaño de la matriz
-
-int[,] numeros = new int[,] { {1, 2,3,4}, {9, 8,7,6}, {7, 6,2,5} };
-string[,] regiones = new string[,] { {"Argentina","Brasil","Perú"}, {"USA",";México","Costa Rica"} }; //Y tambien podemos olvidarnos del operador
-
-int[,] numeros =  { {1, 2,3,4}, {9, 8,7,6}, {7, 6,2,5} };
-string[,] regiones = { {"Argentina","Brasil","Peru"}, {"USA",";Mexico","Costa Rica"} };
--------------------------------------------------------------------
-Los MÉTODOS, un método en C# es una secuencia de enunciados dentro de una unidad lógica en nuestro programa. Son una de las partes esenciales en cualquier aplicación, y proporcionan una forma poderosa de ejecutar operaciones de forma ordenada.
-------------Ejemplo------------
-void Imprimir(string nombre)
-{
-   Console.WriteLine("Hola " + nombre);
-}
--------------------------------------------------------------------</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2243,6 +2223,27 @@ void Imprimir(string nombre)
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgSw0gR0/RWttR/QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>Arreglos multidimensionales:
+--------------------------Ejemplo---------------------------
+int[,] numeros = new int[3, 4] { {1, 2,3,4}, {9, 8,7,6}, {7, 6,2,5} };
+string[,] regiones = new string[2, 3] { {"Argentina","Brasil","Perú"}, {"USA",";México","Costa Rica"} }; //También podemos omitir el tamaño de la matriz
+
+int[,] numeros = new int[,] { {1, 2,3,4}, {9, 8,7,6}, {7, 6,2,5} };
+string[,] regiones = new string[,] { {"Argentina","Brasil","Perú"}, {"USA",";México","Costa Rica"} }; //Y tambien podemos olvidarnos del operador
+
+int[,] numeros =  { {1, 2,3,4}, {9, 8,7,6}, {7, 6,2,5} };
+string[,] regiones = { {"Argentina","Brasil","Peru"}, {"USA",";Mexico","Costa Rica"} };
+-------------------------------------------------------------------
+Los MÉTODOS, un método en C# es una secuencia de enunciados dentro de una unidad lógica en nuestro programa. Son una de las partes esenciales en cualquier aplicación, y proporcionan una forma poderosa de ejecutar operaciones de forma ordenada.
+---------------------------Ejemplo---------------------------
+void Imprimir(string nombre)
+{
+   Console.WriteLine("Hola " + nombre);
+}
+-------------------------------------------------------------------
 </value>
   </data>
 </root>

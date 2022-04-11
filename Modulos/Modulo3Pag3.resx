@@ -117,35 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>IF THEN ELSE IF, también conocido como if anidado, es una sentencia if que se encuentra dentro de otra sentencia if. Esto es considerado una mala práctica y si es usado, no se recomienda usar en más de 5 bloques.
---------------------------Ejemplo--------------------------
-DisplayCharacter('f');  // Output: A lowercase letter: f
-DisplayCharacter('R');  // Output: An uppercase letter: R
-DisplayCharacter('8');  // Output: A digit: 8
-DisplayCharacter(',');  // Output: Not alphanumeric character: ,
-
-void DisplayCharacter(char ch)
-{
-    if (char.IsUpper(ch))
-    {
-        Console.WriteLine($"An uppercase letter: {ch}");
-    }
-    else if (char.IsLower(ch))
-    {
-        Console.WriteLine($"A lowercase letter: {ch}");
-    }
-    else if (char.IsDigit(ch))
-    {
-        Console.WriteLine($"A digit: {ch}");
-    }
-    else
-    {
-        Console.WriteLine($"Not alphanumeric character: {ch}");
-    }
-}
--------------------------------------------------------------------</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2252,6 +2223,36 @@ void DisplayCharacter(char ch)
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgSw0gR0/RWttR/QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>IF THEN ELSE IF, también conocido como if anidado, es una sentencia if que se encuentra dentro de otra sentencia if. Esto es considerado una mala práctica y si es usado, no se recomienda usar en más de 5 bloques.
+--------------------------Ejemplo--------------------------
+DisplayCharacter('f');  // Output: A lowercase letter: f
+DisplayCharacter('R');  // Output: An uppercase letter: R
+DisplayCharacter('8');  // Output: A digit: 8
+DisplayCharacter(',');  // Output: Not alphanumeric character: ,
+
+void DisplayCharacter(char ch)
+{
+    if (char.IsUpper(ch))
+    {
+        Console.WriteLine($"An uppercase letter: {ch}");
+    }
+    else if (char.IsLower(ch))
+    {
+        Console.WriteLine($"A lowercase letter: {ch}");
+    }
+    else if (char.IsDigit(ch))
+    {
+        Console.WriteLine($"A digit: {ch}");
+    }
+    else
+    {
+        Console.WriteLine($"Not alphanumeric character: {ch}");
+    }
+}
+-------------------------------------------------------------------
 </value>
   </data>
 </root>

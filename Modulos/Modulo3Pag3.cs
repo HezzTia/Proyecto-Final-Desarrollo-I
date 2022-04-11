@@ -28,5 +28,10 @@ namespace ProyectoFinal
             new Modulo3Pag4().Show();
             this.Hide();
         }
+
+        private void Modulo3Pag3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

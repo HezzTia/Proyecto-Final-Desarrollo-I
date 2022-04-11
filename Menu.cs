@@ -10,28 +10,30 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class Modulo3Pag2 : Form
+    public partial class Menu : Form
     {
-        public Modulo3Pag2()
+        static void MenuMain()
+        {
+            Application.Run(new Menu());
+        }
+        public Menu()
         {
             InitializeComponent();
         }
 
-        private void Modulo3Pag2_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new Modulo3Pag1().Show();
-            this.Hide();
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Menu_Load(object sender, EventArgs e)
         {
-            new Modulo3Pag3().Show();
-            this.Hide();
+
         }
     }
 }
