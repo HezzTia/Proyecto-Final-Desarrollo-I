@@ -7,13 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
+using ProyectoFinal.Clases;
 
 namespace ProyectoFinal
 {
     public partial class LogIn : Form
     {
 
-        static void Mai()
+        static void Min()
         {
             Application.Run(new LogIn());
         }
@@ -21,6 +23,11 @@ namespace ProyectoFinal
         {
             InitializeComponent();
         }
+       
+
+        OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEB.4.0;Data Source=db_usuarios.mdb");
+        OleDbCommand cmd = new OleDbCommand();
+        OleDbDataAdapter da = new OleDbDataAdapter();
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -31,6 +38,36 @@ namespace ProyectoFinal
         {
             new SignUp().Show();
             this.Hide();
+        }
+
+        private void ClaveLITxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MostrarClaveBtn_CheckedChanged(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+          Login iniciarSesion = new Login();
+           var validar = iniciarSesion.Acceder(UsuarioLITxt.Text , ClaveLITxt.Text);
+            if (validar)
+            {
+                MessageBox.Show("Exitoso");
+            }
+            else
+            {
+                MessageBox.Show("Fallido");
+            }
+            
+        }
+
+        private void LogIn_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

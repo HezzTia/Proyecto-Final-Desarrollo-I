@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.UsuarioLITxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -85,6 +85,7 @@
             this.ClaveLITxt.Size = new System.Drawing.Size(350, 43);
             this.ClaveLITxt.TabIndex = 3;
             this.ClaveLITxt.UseSystemPasswordChar = true;
+            this.ClaveLITxt.TextChanged += new System.EventHandler(this.ClaveLITxt_TextChanged);
             // 
             // label3
             // 
@@ -110,6 +111,7 @@
             this.MostrarClaveBtn.TabIndex = 5;
             this.MostrarClaveBtn.Text = "Mostrar contraseña";
             this.MostrarClaveBtn.UseVisualStyleBackColor = true;
+            this.MostrarClaveBtn.CheckedChanged += new System.EventHandler(this.MostrarClaveBtn_CheckedChanged);
             // 
             // label4
             // 
@@ -166,11 +168,11 @@
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges4;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges2;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.Empty;
@@ -237,13 +239,14 @@
             this.bunifuButton1.TextMarginLeft = 0;
             this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1032, 718);
+            this.ClientSize = new System.Drawing.Size(988, 695);
             this.Controls.Add(this.bunifuButton1);
             this.Controls.Add(this.CrearCuentabtn);
             this.Controls.Add(this.label5);
@@ -258,6 +261,7 @@
             this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogIn";
+            this.Load += new System.EventHandler(this.LogIn_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
