@@ -37,11 +37,19 @@ namespace ProyectoFinal
                 return;
             }
 
-            var validar = registrar.Identificacion(CorreoElectronicoTxt.Text);
+            var validar = registrar.Identificacion (CorreoElectronicoTxt.Text);
 
            if (validar == true)
             {
                 MessageBox.Show("Este correo ya esta utlizado");
+                return;
+            }
+
+            var validarusuario = registrar.IdentificacionUsuario(UsuarioLITx.Text);
+
+            if (validarusuario == true)
+            {
+                MessageBox.Show("Este usuario ya esta utlizado");
                 return;
             }
 
