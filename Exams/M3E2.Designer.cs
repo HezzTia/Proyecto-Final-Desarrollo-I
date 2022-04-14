@@ -114,9 +114,8 @@
             this.label4.Font = new System.Drawing.Font("Britannic Bold", 9.75F);
             this.label4.Location = new System.Drawing.Point(356, 170);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 19);
+            this.label4.Size = new System.Drawing.Size(0, 24);
             this.label4.TabIndex = 3;
-            this.label4.Text = "(20 pts)";
             // 
             // label5
             // 
@@ -124,7 +123,7 @@
             this.label5.Font = new System.Drawing.Font("Britannic Bold", 12F);
             this.label5.Location = new System.Drawing.Point(70, 333);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(424, 28);
+            this.label5.Size = new System.Drawing.Size(339, 22);
             this.label5.TabIndex = 1;
             this.label5.Text = "5. Es una mala práctica de uso de If:";
             // 
@@ -168,9 +167,8 @@
             this.label6.Font = new System.Drawing.Font("Britannic Bold", 9.75F);
             this.label6.Location = new System.Drawing.Point(408, 337);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 19);
+            this.label6.Size = new System.Drawing.Size(0, 24);
             this.label6.TabIndex = 3;
-            this.label6.Text = "(20 pts)";
             // 
             // button1
             // 
@@ -193,6 +191,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Atrás";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // linkLabel1
             // 

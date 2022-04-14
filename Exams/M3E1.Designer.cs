@@ -121,9 +121,8 @@
             this.label4.Font = new System.Drawing.Font("Britannic Bold", 9.75F);
             this.label4.Location = new System.Drawing.Point(507, 154);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 19);
+            this.label4.Size = new System.Drawing.Size(0, 24);
             this.label4.TabIndex = 3;
-            this.label4.Text = "(20 pts)";
             // 
             // label5
             // 
@@ -175,9 +174,8 @@
             this.label6.Font = new System.Drawing.Font("Britannic Bold", 9.75F);
             this.label6.Location = new System.Drawing.Point(218, 307);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 19);
+            this.label6.Size = new System.Drawing.Size(0, 24);
             this.label6.TabIndex = 3;
-            this.label6.Text = "(20 pts)";
             // 
             // label7
             // 
@@ -229,9 +227,8 @@
             this.label8.Font = new System.Drawing.Font("Britannic Bold", 9.75F);
             this.label8.Location = new System.Drawing.Point(192, 456);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 19);
+            this.label8.Size = new System.Drawing.Size(0, 24);
             this.label8.TabIndex = 3;
-            this.label8.Text = "(20 pts)";
             // 
             // button1
             // 
@@ -243,6 +240,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Siguiente";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLabel1
             // 

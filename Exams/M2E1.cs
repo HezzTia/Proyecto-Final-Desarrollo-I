@@ -12,6 +12,12 @@ namespace ProyectoFinal.Exams
 {
     public partial class M2E1 : Form
     {
+        public static void sasas()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new M2E1());
+        }
         public M2E1()
         {
             InitializeComponent();
@@ -40,6 +46,13 @@ namespace ProyectoFinal.Exams
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            M2E2 m2e2 = new M2E2();
+            m2e2.ShowDialog();
         }
     }
 }

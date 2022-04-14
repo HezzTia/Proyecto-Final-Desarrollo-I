@@ -16,5 +16,12 @@ namespace ProyectoFinal.Exams
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            M5E2 m5e2 = new M5E2();
+            m5e2.ShowDialog();
+        }
     }
 }
