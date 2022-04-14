@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoFinal
+namespace ProyectoFinal.Exams
 {
     public partial class M2E1 : Form
     {
@@ -22,17 +22,22 @@ namespace ProyectoFinal
 
         }
 
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void checkBox7_CheckedChanged(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void checkBox8_CheckedChanged(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

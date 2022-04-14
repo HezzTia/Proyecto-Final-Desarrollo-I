@@ -12,7 +12,7 @@ namespace ProyectoFinal
 {
     public partial class M1E1 : Form
     {
-        public static void Whatever()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

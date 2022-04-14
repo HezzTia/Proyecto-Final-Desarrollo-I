@@ -12,7 +12,7 @@ namespace ProyectoFinal
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void asas(string[] args)
         {
             Console.WriteLine("Hola");
             Console.WriteLine("Escribe a cual archivo entrar");
@@ -23,7 +23,7 @@ namespace ProyectoFinal
                 case 1:
                     new LogIn().Show();
                     break;
-                    case 2:
+                case 2:
                     new SignUp().Show();
                     break;
             }

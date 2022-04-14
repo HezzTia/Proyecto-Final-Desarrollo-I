@@ -283,6 +283,18 @@
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\Login.cs" />
     <Compile Include="Clases\Registrar.cs" />
+    <Compile Include="Exams\M3E1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\M3E1.Designer.cs">
+      <DependentUpon>M3E1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\M2E1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\M2E1.Designer.cs">
+      <DependentUpon>M2E1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Exams\M1E2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -294,6 +306,42 @@
     </Compile>
     <Compile Include="Exams\M1E1.Designer.cs">
       <DependentUpon>M1E1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\M2E2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\M2E2.Designer.cs">
+      <DependentUpon>M2E2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\M3E2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\M3E2.Designer.cs">
+      <DependentUpon>M3E2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\M4E1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\M4E1.Designer.cs">
+      <DependentUpon>M4E1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\M4E2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\M4E2.Designer.cs">
+      <DependentUpon>M4E2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\M5E1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\M5E1.Designer.cs">
+      <DependentUpon>M5E1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\M5E2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\M5E2.Designer.cs">
+      <DependentUpon>M5E2.cs</DependentUpon>
     </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
@@ -457,6 +505,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Exams\M1E1.resx">
       <DependentUpon>M1E1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\M2E1.resx">
+      <DependentUpon>M2E1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\M2E2.resx">
+      <DependentUpon>M2E2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\M3E1.resx">
+      <DependentUpon>M3E1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\M3E2.resx">
+      <DependentUpon>M3E2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\M4E1.resx">
+      <DependentUpon>M4E1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\M4E2.resx">
+      <DependentUpon>M4E2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\M5E1.resx">
+      <DependentUpon>M5E1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\M5E2.resx">
+      <DependentUpon>M5E2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
