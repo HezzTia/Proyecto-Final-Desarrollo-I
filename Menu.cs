@@ -35,5 +35,40 @@ namespace ProyectoFinal
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Exams.M1 m1 = new Exams.M1();
+            m1.ShowDialog();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Exams.M2 m2 = new Exams.M2();
+            m2.ShowDialog();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Exams.M3 m3 = new Exams.M3();
+            m3.ShowDialog();
+            this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Exams.M4 m4 = new Exams.M4();
+            m4.ShowDialog();
+            this.Hide();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Exams.M5 m5 = new Exams.M5();
+            m5.ShowDialog();
+            this.Hide();
+        }
     }
 }

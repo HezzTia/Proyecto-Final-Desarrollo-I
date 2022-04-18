@@ -208,7 +208,7 @@
       <HintPath>packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -283,17 +283,95 @@
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\Login.cs" />
     <Compile Include="Clases\Registrar.cs" />
-    <Compile Include="Exams\M1E2.cs">
+    <Compile Include="Exams\M5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Exams\M1E2.Designer.cs">
+    <Compile Include="Exams\M5.Designer.cs">
+      <DependentUpon>M5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\M4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\M4.Designer.cs">
+      <DependentUpon>M4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\M3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\M3.Designer.cs">
+      <DependentUpon>M3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\M2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\M2.Designer.cs">
+      <DependentUpon>M2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\M1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\M1.Designer.cs">
+      <DependentUpon>M1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\Viejos\M3E1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\Viejos\M3E1.Designer.cs">
+      <DependentUpon>M3E1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\Viejos\M2E1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\Viejos\M2E1.Designer.cs">
+      <DependentUpon>M2E1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\Viejos\M1E2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\Viejos\M1E2.Designer.cs">
       <DependentUpon>M1E2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Exams\M1E1.cs">
+    <Compile Include="Exams\Viejos\M1E1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Exams\M1E1.Designer.cs">
+    <Compile Include="Exams\Viejos\M1E1.Designer.cs">
       <DependentUpon>M1E1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\Viejos\M2E2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\Viejos\M2E2.Designer.cs">
+      <DependentUpon>M2E2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\Viejos\M3E2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\Viejos\M3E2.Designer.cs">
+      <DependentUpon>M3E2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\Viejos\M4E1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\Viejos\M4E1.Designer.cs">
+      <DependentUpon>M4E1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\Viejos\M4E2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\Viejos\M4E2.Designer.cs">
+      <DependentUpon>M4E2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\Viejos\M5E1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\Viejos\M5E1.Designer.cs">
+      <DependentUpon>M5E1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\Viejos\M5E2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exams\Viejos\M5E2.Designer.cs">
+      <DependentUpon>M5E2.cs</DependentUpon>
     </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
@@ -452,11 +530,50 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Exams\M1E2.resx">
+    <EmbeddedResource Include="Exams\M5.resx">
+      <DependentUpon>M5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\M4.resx">
+      <DependentUpon>M4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\M3.resx">
+      <DependentUpon>M3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\M2.resx">
+      <DependentUpon>M2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\M1.resx">
+      <DependentUpon>M1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\Viejos\M1E2.resx">
       <DependentUpon>M1E2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Exams\M1E1.resx">
+    <EmbeddedResource Include="Exams\Viejos\M1E1.resx">
       <DependentUpon>M1E1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\Viejos\M2E1.resx">
+      <DependentUpon>M2E1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\Viejos\M2E2.resx">
+      <DependentUpon>M2E2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\Viejos\M3E1.resx">
+      <DependentUpon>M3E1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\Viejos\M3E2.resx">
+      <DependentUpon>M3E2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\Viejos\M4E1.resx">
+      <DependentUpon>M4E1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\Viejos\M4E2.resx">
+      <DependentUpon>M4E2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\Viejos\M5E1.resx">
+      <DependentUpon>M5E1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exams\Viejos\M5E2.resx">
+      <DependentUpon>M5E2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
