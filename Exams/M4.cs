@@ -20,13 +20,6 @@ namespace ProyectoFinal.Exams
         int vCantPreguntas;
         int vTagRes;
 
-        public static void fasfa()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new M4());
-        }
-
         public M4()
         {
             InitializeComponent();

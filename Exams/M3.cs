@@ -20,13 +20,6 @@ namespace ProyectoFinal.Exams
         int vCantPreguntas;
         int vTagRes;
 
-        public static void wdawdw()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new M3());
-        }
-
         public M3()
         {
             InitializeComponent();

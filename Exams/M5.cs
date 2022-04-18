@@ -20,13 +20,6 @@ namespace ProyectoFinal.Exams
         int vCantPreguntas;
         int vTagRes;
 
-        static void Man()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new M5());
-        }
-
         public M5()
         {
             InitializeComponent();
