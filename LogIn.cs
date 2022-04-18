@@ -15,7 +15,7 @@ namespace ProyectoFinal
     public partial class LogIn : Form
     {
 
-        static void Main()
+        static void Ma()
         {
             Application.Run(new LogIn());
         }
@@ -57,7 +57,9 @@ namespace ProyectoFinal
             if (validar)
             {
                 MessageBox.Show("Exitoso");
-
+                Menu MenuPrincipal = new Menu();
+                this.Hide();
+                MenuPrincipal.Show();
             }
             else
             {

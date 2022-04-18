@@ -20,7 +20,7 @@ namespace ProyectoFinal.Exams
         int vCantPreguntas;
         int vTagRes;
 
-        public static void Main()
+        static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

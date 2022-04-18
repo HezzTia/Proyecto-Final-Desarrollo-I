@@ -12,7 +12,7 @@ namespace ProyectoFinal
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Mai(string[] args)
         {
             Console.WriteLine("Hola");
             Console.WriteLine("Escribe a cual archivo entrar");

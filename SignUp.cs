@@ -159,5 +159,10 @@ namespace ProyectoFinal
                 iniciarSesion.Show();
             }
         }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
