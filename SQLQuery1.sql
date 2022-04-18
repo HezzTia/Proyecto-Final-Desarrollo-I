@@ -1,0 +1,2 @@
+insert into Registrar (Username, Password, Nombre, Apellido, Sexo,[Correo Electronico], [Fecha de Nacimiento]) 
+values ('fdsfds', 'dfsdfds', 'asda', 'dsfsd','Masculino', 'sdfsdf' ,'4/10/2022 12:00:00 AM')

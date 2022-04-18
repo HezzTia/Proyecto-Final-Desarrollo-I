@@ -57,6 +57,7 @@ namespace ProyectoFinal
 
             if(insertar)
             {
+
                 MessageBox.Show("La cuenta se registro con exito");
                 LogIn iniciarSesion = new LogIn();
                 this.Hide();
@@ -120,6 +121,43 @@ namespace ProyectoFinal
 
         }
 
-     
+        private void RegistrarBtn_Click_1(object sender, EventArgs e)
+        {
+            Registrar registrar = new Registrar();
+
+            if (NombreTxt.Text == "" || ApellidoTxt.Text == "" || CorreoElectronicoTxt.Text == "" || Sexo.Text == "" || UsuarioLITx.Text == "" || ClaveLiTx.Text == "")
+            {
+                MessageBox.Show("Por favor termine de llenar los campos vacios", "Fallo el proceso de registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return;
+            }
+
+            var validar = registrar.Identificacion(CorreoElectronicoTxt.Text);
+
+            if (validar == true)
+            {
+                MessageBox.Show("Este correo ya esta utlizado");
+                return;
+            }
+
+            var validarusuario = registrar.IdentificacionUsuario(UsuarioLITx.Text);
+
+            if (validarusuario == true)
+            {
+                MessageBox.Show("Este usuario ya esta utlizado");
+                return;
+            }
+
+            var insertar = registrar.ingresar(NombreTxt.Text, ApellidoTxt.Text, CorreoElectronicoTxt.Text, UsuarioLITx.Text, ClaveLiTx.Text, Sexo.Text, FechadeNacimiento.Value.Date);
+
+            if (insertar)
+            {
+
+                MessageBox.Show("La cuenta se registro con exito");
+                LogIn iniciarSesion = new LogIn();
+                this.Hide();
+                iniciarSesion.Show();
+            }
+        }
     }
 }

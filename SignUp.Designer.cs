@@ -625,6 +625,7 @@
             this.RegistrarBtn.TextMarginLeft = 0;
             this.RegistrarBtn.TextPadding = new System.Windows.Forms.Padding(0);
             this.RegistrarBtn.UseDefaultRadiusAndThickness = true;
+            this.RegistrarBtn.Click += new System.EventHandler(this.RegistrarBtn_Click_1);
             // 
             // label1
             // 

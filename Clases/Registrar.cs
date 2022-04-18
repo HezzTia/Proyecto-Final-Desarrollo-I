@@ -18,7 +18,7 @@ namespace ProyectoFinal.Clases
             {
                 return false;
             }
-            SqlCommand consulta = new SqlCommand("select * from Registrar where [Correo Electronico] '" + correo + "'", conexion.con);
+            SqlCommand consulta = new SqlCommand("select * from Registrar where [Correo Electronico] = '" + correo + "'", conexion.con);
             consulta.CommandType = System.Data.CommandType.Text;
             SqlDataReader read = consulta.ExecuteReader();
             if (read.Read())
