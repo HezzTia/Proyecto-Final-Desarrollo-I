@@ -15,7 +15,7 @@ namespace ProyectoFinal
     public partial class LogIn : Form
     {
 
-        static void Ma()
+        static void Main()
         {
             Application.Run(new LogIn());
         }
@@ -47,7 +47,15 @@ namespace ProyectoFinal
 
         private void MostrarClaveBtn_CheckedChanged(object sender, EventArgs e)
         {
-         
+            if (ClaveLITxt.PasswordChar == '*') 
+            {
+                ClaveLITxt.PasswordChar = '\0';
+            }
+            else
+            {
+                ClaveLITxt.PasswordChar= '*';
+            }
+
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
@@ -56,14 +64,13 @@ namespace ProyectoFinal
            var validar = iniciarSesion.Acceder(UsuarioLITxt.Text , ClaveLITxt.Text);
             if (validar)
             {
-                MessageBox.Show("Exitoso");
                 Menu MenuPrincipal = new Menu();
                 this.Hide();
                 MenuPrincipal.Show();
             }
             else
             {
-                MessageBox.Show("Fallido");
+                MessageBox.Show("Usuario/Contraseña incorrecta ");
             }
             
         }
@@ -71,6 +78,16 @@ namespace ProyectoFinal
         private void LogIn_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void UsuarioLITxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
