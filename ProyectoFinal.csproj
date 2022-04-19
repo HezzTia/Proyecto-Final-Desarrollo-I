@@ -385,7 +385,6 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mini.cs" />
     <Compile Include="Modulos\Modulo5Pag1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -476,7 +475,6 @@
     <Compile Include="Modulos\Modulo1Pag1.Designer.cs">
       <DependentUpon>Modulo1Pag1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pena.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -487,9 +485,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Robert.cs" />
-    <Compile Include="Emily.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
@@ -540,13 +535,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Scripts\jquery.datetimepicker.js" />
-    <Content Include="SharpMe.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SharpMe_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>SharpMe.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Exams\M5.resx">

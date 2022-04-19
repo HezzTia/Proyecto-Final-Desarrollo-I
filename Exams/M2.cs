@@ -130,7 +130,7 @@ namespace ProyectoFinal.Exams
             {
                 vPorcentaje = (int)Math.Round((double)(vPunt * 100) / vCantPreguntas);
 
-                MessageBox.Show("Examen Módulo #1 Finalizado!" + Environment.NewLine +
+                MessageBox.Show("Examen Módulo #2 Finalizado!" + Environment.NewLine +
                     $"Total de preguntas acertadas: {vPunt}" + Environment.NewLine +
                     $"Puntuación: {vPorcentaje}%" + Environment.NewLine +
                     "Haga click en Ok para ir al menú principal");
@@ -157,7 +157,7 @@ namespace ProyectoFinal.Exams
         {
             vPorcentaje = (int)Math.Round((double)(vPunt * 100) / vCantPreguntas);
 
-            MessageBox.Show("Examen Módulo #1 Finalizado!" + Environment.NewLine +
+            MessageBox.Show("Examen Módulo #2 Finalizado!" + Environment.NewLine +
                 $"Total de preguntas acertadas: {vPunt}" + Environment.NewLine +
                 $"Puntuación: {vPorcentaje}%" + Environment.NewLine +
                 "Haga click en Ok para ir al menú principal");

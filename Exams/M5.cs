@@ -118,10 +118,18 @@ namespace ProyectoFinal.Exams
             {
                 vPorcentaje = (int)Math.Round((double)(vPunt * 100) / vCantPreguntas);
 
-                MessageBox.Show("Examen Módulo #1 Finalizado!" + Environment.NewLine +
+                MessageBox.Show("Examen Módulo #5 Finalizado!" + Environment.NewLine +
                     $"Total de preguntas acertadas: {vPunt}" + Environment.NewLine +
                     $"Puntuación: {vPorcentaje}%" + Environment.NewLine +
                     "Haga click en Ok para ir al menú principal");
+
+                if (vPorcentaje >= 75)
+                {
+                    MessageBox.Show("¡Felicidades!" + Environment.NewLine + 
+                                    "Usted ha aprobado satisfactoriamente el curso de C#" + Environment.NewLine +
+                                    "En las próximas 48 horas nos pondremos en contacto" + Environment.NewLine + 
+                                    "para entregarle su certificado");
+                }
 
                 GuardarNota(User, vPorcentaje);
                 this.Hide();
@@ -145,7 +153,7 @@ namespace ProyectoFinal.Exams
         {
             vPorcentaje = (int)Math.Round((double)(vPunt * 100) / vCantPreguntas);
 
-            MessageBox.Show("Examen Módulo #1 Finalizado!" + Environment.NewLine +
+            MessageBox.Show("Examen Módulo #5 Finalizado!" + Environment.NewLine +
                 $"Total de preguntas acertadas: {vPunt}" + Environment.NewLine +
                 $"Puntuación: {vPorcentaje}%" + Environment.NewLine +
                 "Haga click en Ok para ir al menú principal");
