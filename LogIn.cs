@@ -23,11 +23,6 @@ namespace ProyectoFinal
         {
             InitializeComponent();
         }
-       
-
-        OleDbConnection con = new OleDbConnection("Provider=Microsoft.Jet.OLEB.4.0;Data Source=db_usuarios.mdb");
-        OleDbCommand cmd = new OleDbCommand();
-        OleDbDataAdapter da = new OleDbDataAdapter();
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -36,6 +31,7 @@ namespace ProyectoFinal
 
         private void CrearCuenta_Click(object sender, EventArgs e)
         {
+            //Al presionar al label entraras al registrar
             new SignUp().Show();
             this.Hide();
         }
@@ -47,6 +43,7 @@ namespace ProyectoFinal
 
         private void MostrarClaveBtn_CheckedChanged(object sender, EventArgs e)
         {
+            //Si el texto tiene caracter * al precionar al check mostrará los caracteres
             if (ClaveLITxt.PasswordChar == '*') 
             {
                 ClaveLITxt.PasswordChar = '\0';
@@ -60,10 +57,11 @@ namespace ProyectoFinal
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-          Login iniciarSesion = new Login();
-           var validar = iniciarSesion.Acceder(UsuarioLITxt.Text , ClaveLITxt.Text);
+          Login iniciarSesion = new Login(); //Entra a la clase de Login
+           var validar = iniciarSesion.Acceder(UsuarioLITxt.Text , ClaveLITxt.Text); //Crea una variable llamada validar del metodo Acceder de la clase iniciar sesion. La cual utilizara los datos de los textbox
             if (validar)
             {
+                //Si estan los datos en la base datos, entrara al menu
                 Menu MenuPrincipal = new Menu();
                 this.Hide();
                 MenuPrincipal.User = UsuarioLITxt.Text;
@@ -71,7 +69,8 @@ namespace ProyectoFinal
             }
             else
             {
-                MessageBox.Show("Usuario/Contraseña incorrecta ");
+                //Si no estan uno de los datos, presentara un messagebox
+                MessageBox.Show("Usuario/Contraseña incorrecta");
             }
             
         }
