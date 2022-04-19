@@ -125,20 +125,24 @@ namespace ProyectoFinal.Exams
 
         private void SiguientePag(object sender, EventArgs e)
         {
+            // Verifica si el checkbox seleccionado es la respuesta correcta
             if (vTagRes == vResCorrecta)
             {
+                // Agrega un punto si la condición se cumple
                 vPunt++;
             }
 
+            // Verifica si está en la última pregunta
             if (vNumPregunta == vCantPreguntas)
             {
+                // Calcula el porcentaje para la nota
                 vPorcentaje = (int)Math.Round((double)(vPunt * 100) / vCantPreguntas);
 
                 MessageBox.Show("Examen Módulo #1 Finalizado!" + Environment.NewLine +
                     $"Total de preguntas acertadas: {vPunt}" + Environment.NewLine +
                     $"Puntuación: {vPorcentaje}%" + Environment.NewLine +
                     "Haga click en Ok para ir al menú principal");
-
+                // Guarda la nota en al Base de Datos y manda al menú
                 GuardarNota(User, vPorcentaje);
                 this.Hide();
                 Menu menu = new Menu();
@@ -157,6 +161,7 @@ namespace ProyectoFinal.Exams
             CBA3.Checked = false;
         }
 
+        // Cierra el examen y guarda la nota
         private void FinExamen(object sender, LinkLabelLinkClickedEventArgs e)
         {
             vPorcentaje = (int)Math.Round((double)(vPunt * 100) / vCantPreguntas);
