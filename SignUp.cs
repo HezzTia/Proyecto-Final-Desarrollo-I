@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using ProyectoFinal.Clases;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProyectoFinal
 {
@@ -25,6 +26,27 @@ namespace ProyectoFinal
         {
             Application.Exit(); 
         }
+        static bool verificarCorreo(string email)
+        {
+            if (new EmailAddressAttribute().IsValid(email))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
         private void RegistrarBtn_Click(object sender, EventArgs e)
         {
@@ -33,102 +55,6 @@ namespace ProyectoFinal
             if (NombreTxt.Text == "" || ApellidoTxt.Text == "" || CorreoElectronicoTxt.Text == "" || Sexo.Text == "" || UsuarioLITx.Text == "" || ClaveLiTx.Text == "")
             {
                 MessageBox.Show("Por favor termine de llenar los campos vacios", "Fallo el proceso de registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                return;
-            }
-
-            var validar = registrar.Identificacion (CorreoElectronicoTxt.Text);
-
-           if (validar == true)
-            {
-                MessageBox.Show("Este correo ya esta utlizado");
-                return;
-            }
-
-            var validarusuario = registrar.IdentificacionUsuario(UsuarioLITx.Text);
-
-            if (validarusuario == true)
-            {
-                MessageBox.Show("Este usuario ya esta utlizado");
-                return;
-            }
-
-           var insertar =  registrar.ingresar(NombreTxt.Text, ApellidoTxt.Text, CorreoElectronicoTxt.Text, UsuarioLITx.Text, ClaveLiTx.Text, Sexo.Text, FechadeNacimiento.Value.Date);
-
-            if(insertar)
-            {
-
-                MessageBox.Show("La cuenta se registro con exito");
-                LogIn iniciarSesion = new LogIn();
-                this.Hide();
-                iniciarSesion.Show();
-            }
-           
-        }
-
-        private void AnoTxt_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DiaTxt_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UsuarioLITx_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ClaveLiTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Sexo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CorreoElectronicoTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ApellidoTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NombreTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MesTxt_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RegistrarBtn_Click_1(object sender, EventArgs e)
-        {
-            Registrar registrar = new Registrar();
-
-            if (NombreTxt.Text == "" || ApellidoTxt.Text == "" || CorreoElectronicoTxt.Text == "" || Sexo.Text == "" || UsuarioLITx.Text == "" || ClaveLiTx.Text == "")
-            {
-                MessageBox.Show("Por favor termine de llenar los campos vacios", "Fallo el proceso de registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                 return;
             }
 
@@ -136,7 +62,7 @@ namespace ProyectoFinal
 
             if (validar == true)
             {
-                MessageBox.Show("Este correo ya esta utlizado");
+                MessageBox.Show("Este correo ya esta utlizado", "Fallo el proceso de registro", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
@@ -144,25 +70,40 @@ namespace ProyectoFinal
 
             if (validarusuario == true)
             {
-                MessageBox.Show("Este usuario ya esta utlizado");
+                MessageBox.Show("Este usuario ya esta utlizado", "Fallo el proceso de registro", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            var validarcorreo = verificarCorreo(CorreoElectronicoTxt.Text);
+            if (validarcorreo == false)
+            {
+                MessageBox.Show("Formato de correo invalido");
                 return;
             }
 
             var insertar = registrar.ingresar(NombreTxt.Text, ApellidoTxt.Text, CorreoElectronicoTxt.Text, UsuarioLITx.Text, ClaveLiTx.Text, Sexo.Text, FechadeNacimiento.Value.Date);
-
             if (insertar)
             {
-
                 MessageBox.Show("La cuenta se registro con exito");
                 LogIn iniciarSesion = new LogIn();
                 this.Hide();
                 iniciarSesion.Show();
+                return;
             }
+           
         }
 
-        private void SignUp_Load(object sender, EventArgs e)
+        private void IngresarCuentabtn_Click_1(object sender, EventArgs e)
         {
-
+            LogIn logIn = new LogIn();
+            this.Hide();
+            logIn.Show();
+        }
+       
+        private void CorreoElectronicoTxt_TextChanged_1(object sender, EventArgs e)
+        {
+            
         }
     }
 }
+

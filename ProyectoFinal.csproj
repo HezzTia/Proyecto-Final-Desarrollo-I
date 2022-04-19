@@ -497,6 +497,11 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="_dbo_usuariosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_dbo_usuariosDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -504,6 +509,17 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="_dbo_usuariosDataSet.xsc">
+      <DependentUpon>_dbo_usuariosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_dbo_usuariosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_dbo_usuariosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_dbo_usuariosDataSet.xss">
+      <DependentUpon>_dbo_usuariosDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -520,6 +536,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\jquery.datetimepicker.css" />
+    <Content Include="dbo.usuarios.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Scripts\jquery.datetimepicker.js" />
     <Content Include="SharpMe.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
