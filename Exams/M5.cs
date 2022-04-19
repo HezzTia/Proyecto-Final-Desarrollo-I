@@ -131,7 +131,6 @@ namespace ProyectoFinal.Exams
                                     "para entregarle su certificado");
                 }
 
-                GuardarNota(User, vPorcentaje);
                 this.Hide();
                 Menu menu = new Menu();
                 menu.User = User;
@@ -158,7 +157,6 @@ namespace ProyectoFinal.Exams
                 $"Puntuación: {vPorcentaje}%" + Environment.NewLine +
                 "Haga click en Ok para ir al menú principal");
 
-            GuardarNota(User, vPorcentaje);
             this.Hide();
             Menu menu = new Menu();
             menu.User = User;
