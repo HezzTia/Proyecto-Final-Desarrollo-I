@@ -23,12 +23,16 @@ namespace ProyectoFinal
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Modulo1Pag1 modulo1Pag1 = new Modulo1Pag1();
+            modulo1Pag1.ShowDialog();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Modulo2Pag1 modulo2Pag1 = new Modulo2Pag1();
+            modulo2Pag1.ShowDialog();
+            this.Hide();
         }
 
         private void Menu_Load(object sender, EventArgs e)
@@ -68,6 +72,34 @@ namespace ProyectoFinal
         {
             Exams.M5 m5 = new Exams.M5();
             m5.ShowDialog();
+            this.Hide();
+        }
+
+        private void Cerrar(object sender, EventArgs e)
+        {
+            this.Hide();
+            LogIn login = new LogIn();
+            login.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Modulo3Pag1 modulo3Pag1 = new Modulo3Pag1();
+            modulo3Pag1.ShowDialog();
+            this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Modulo4Pag1 modulo4Pag1 = new Modulo4Pag1();
+            modulo4Pag1.ShowDialog();
+            this.Hide();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Modulo5Pag1 modulo5Pag1 = new Modulo5Pag1();
+            modulo5Pag1.ShowDialog();
             this.Hide();
         }
     }

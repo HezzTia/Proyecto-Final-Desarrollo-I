@@ -22,5 +22,12 @@ namespace ProyectoFinal
             new Modulo4Pag1().Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.ShowDialog();
+        }
     }
 }

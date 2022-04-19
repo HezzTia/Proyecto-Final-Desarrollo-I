@@ -29,8 +29,15 @@ namespace ProyectoFinal
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            new Modulo3Pag2().Show();
             this.Hide();
+            new Modulo3Pag2().Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.ShowDialog();
         }
     }
 }
