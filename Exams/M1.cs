@@ -33,10 +33,12 @@ namespace ProyectoFinal.Exams
 
         public string User { get; set; }
 
+        // Al hacer click en siguiente se verifica la respuesta seleccionada
         private void RevRespuestas(object sender, EventArgs e)
         {
             var vSenderObject = (CheckBox)sender;
 
+            // Se asigna a la variable vTagRes el Tag del checkbox para luego marcarlo como respuesta correcta.
             vTagRes = Convert.ToInt32(vSenderObject.Tag);
         }
 
@@ -53,6 +55,7 @@ namespace ProyectoFinal.Exams
                     CBA2.Text = "Parte física de un computador";
                     CBA3.Text = "Programa en el cual se desarrollan programas";
 
+                    // Aquí se indica la respuesta correcta usando el tag del checkbox que la contiene
                     vResCorrecta = 1;
                     break;
 
@@ -170,11 +173,13 @@ namespace ProyectoFinal.Exams
             menu.ShowDialog();
         }
 
+        // Guarda la nota obtenida por el usuario en el examen en la Base de Datos
         private bool GuardarNota(string user, int nota)
         {
 
             Clases.Conexion conexion = new Clases.Conexion();
             var resultado = conexion.AbrirConexion();
+            // Verifica que la base de datos se haya conectado
             if (resultado == false)
             {
                 return false;

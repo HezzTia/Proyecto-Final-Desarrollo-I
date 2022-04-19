@@ -201,7 +201,7 @@ namespace ProyectoFinal
 
             try
             {
-                if(reader.Read())
+                while(reader.Read())
                 {
                     NotaModulo = reader.GetInt32(0);
                 }
