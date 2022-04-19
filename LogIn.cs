@@ -66,6 +66,7 @@ namespace ProyectoFinal
             {
                 Menu MenuPrincipal = new Menu();
                 this.Hide();
+                MenuPrincipal.User = UsuarioLITxt.Text;
                 MenuPrincipal.Show();
             }
             else

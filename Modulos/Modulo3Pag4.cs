@@ -7,20 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProyectoFinal
 {
     public partial class Modulo3Pag4 : Form
     {
+        int nota = 100;
         public Modulo3Pag4()
         {
             InitializeComponent();
         }
 
+        public string User { get; set; }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            new Modulo3Pag3().Show();
+            GuardarNota(User, nota);
             this.Hide();
+            Modulo3Pag3 modulo3Pag3 = new Modulo3Pag3();
+            modulo3Pag3.User = User;
+            modulo3Pag3.ShowDialog();
         }
 
         private void Modulo3Pag4_Load(object sender, EventArgs e)
@@ -30,9 +37,31 @@ namespace ProyectoFinal
 
         private void button1_Click(object sender, EventArgs e)
         {
+            GuardarNota(User, nota);
             this.Hide();
             Menu menu = new Menu();
+            menu.User = User;
             menu.ShowDialog();
+        }
+
+        private bool GuardarNota(string user, int nota)
+        {
+
+            Clases.Conexion conexion = new Clases.Conexion();
+            var resultado = conexion.AbrirConexion();
+            if (resultado == false)
+            {
+                return false;
+            }
+            SqlCommand guardar = new SqlCommand("update Registrar set M3='" + nota + "' where Username='" + user + "'", conexion.con);
+
+
+            guardar.ExecuteNonQuery();
+
+            conexion.CerrarConexion();
+
+
+            return true;
         }
     }
 }

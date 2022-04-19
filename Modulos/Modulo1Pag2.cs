@@ -7,15 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProyectoFinal
 {
     public partial class Modulo1Pag2 : Form
     {
+        int nota = 66;
         public Modulo1Pag2()
         {
             InitializeComponent();
         }
+
+        public string User { get; set; }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -39,14 +43,40 @@ namespace ProyectoFinal
 
         private void button3_Click(object sender, EventArgs e)
         {
-            new Modulo1Pag3().Show();
             this.Hide();
+            GuardarNota(User, nota);
+            Modulo1Pag3 modulo1Pag3 = new Modulo1Pag3();
+            modulo1Pag3.User = User;
+            modulo1Pag3.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            new Modulo1Pag1().Show();
             this.Hide();
+            GuardarNota(User, nota);
+            Modulo1Pag1 modulo1Pag1 = new Modulo1Pag1();
+            modulo1Pag1.User = User;
+            modulo1Pag1.ShowDialog();
+        }
+
+        private bool GuardarNota(string user, int nota)
+        {
+
+            Clases.Conexion conexion = new Clases.Conexion();
+            var resultado = conexion.AbrirConexion();
+            if (resultado == false)
+            {
+                return false;
+            }
+            SqlCommand guardar = new SqlCommand("update Registrar set M1='" + nota + "' where Username='" + user + "'", conexion.con);
+
+
+            guardar.ExecuteNonQuery();
+
+            conexion.CerrarConexion();
+
+
+            return true;
         }
     }
 }

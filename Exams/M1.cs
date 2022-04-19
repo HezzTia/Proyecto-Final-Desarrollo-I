@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
+using System.Data.SqlClient;
 
 namespace ProyectoFinal.Exams
 {
@@ -28,6 +30,8 @@ namespace ProyectoFinal.Exams
 
             vCantPreguntas = 6;
         }
+
+        public string User { get; set; }
 
         private void RevRespuestas(object sender, EventArgs e)
         {
@@ -132,8 +136,10 @@ namespace ProyectoFinal.Exams
                     $"Puntuación: {vPorcentaje}%" + Environment.NewLine +
                     "Haga click en Ok para ir al menú principal");
 
+                GuardarNota(User, vPorcentaje);
                 this.Hide();
                 Menu menu = new Menu();
+                menu.User = User;
                 menu.ShowDialog();
             }
 
@@ -157,9 +163,31 @@ namespace ProyectoFinal.Exams
                 $"Puntuación: {vPorcentaje}%" + Environment.NewLine +
                 "Haga click en Ok para ir al menú principal");
 
+            GuardarNota(User, vPorcentaje);
             this.Hide();
             Menu menu = new Menu();
+            menu.User = User;
             menu.ShowDialog();
+        }
+
+        private bool GuardarNota(string user, int nota)
+        {
+
+            Clases.Conexion conexion = new Clases.Conexion();
+            var resultado = conexion.AbrirConexion();
+            if (resultado == false)
+            {
+                return false;
+            }
+            SqlCommand guardar = new SqlCommand("update Registrar set M1E='"+nota+"' where Username='"+user+"'", conexion.con);
+
+
+            guardar.ExecuteNonQuery();
+
+            conexion.CerrarConexion();
+
+
+            return true;
         }
     }
 }

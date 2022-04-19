@@ -7,24 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProyectoFinal
 {
     public partial class Modulo1Pag1 : Form
     {
-        static void Modulo1()
-        {
-            Application.Run(new Modulo1Pag1());
-        }
+        int nota = 33;
         public Modulo1Pag1()
         {
             InitializeComponent();
         }
 
+        public string User { get; set; }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            new Modulo1Pag2().Show();
             this.Hide();
+            GuardarNota(User, nota);
+            Modulo1Pag2 modulo1Pag2 = new Modulo1Pag2();
+            modulo1Pag2.User = User;
+            modulo1Pag2.ShowDialog();
         }
 
         private void Modulo1Pag1_Load(object sender, EventArgs e)
@@ -35,13 +38,35 @@ namespace ProyectoFinal
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
+            GuardarNota(User, nota);
             Menu menu = new Menu();
+            menu.User = User;
             menu.ShowDialog();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private bool GuardarNota(string user, int nota)
+        {
+
+            Clases.Conexion conexion = new Clases.Conexion();
+            var resultado = conexion.AbrirConexion();
+            if (resultado == false)
+            {
+                return false;
+            }
+            SqlCommand guardar = new SqlCommand("update Registrar set M1='" + nota + "' where Username='" + user + "'", conexion.con);
+
+
+            guardar.ExecuteNonQuery();
+
+            conexion.CerrarConexion();
+
+
+            return true;
         }
     }
 }
