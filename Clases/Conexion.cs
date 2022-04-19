@@ -11,7 +11,7 @@ namespace ProyectoFinal.Clases
 
     public class Conexion
     {
-        public string cadena = "Data source = localhost; Initial catalog = dbo.usuarios; Integrated security = true;";
+        public string cadena = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbo.usuarios.mdf;Integrated Security=True;Connect Timeout=30";
         public SqlConnection con = new SqlConnection();
 
 
